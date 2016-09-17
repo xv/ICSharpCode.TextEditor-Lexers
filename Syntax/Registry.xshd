@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+Registry syntax highlighting
+Written by Ezra Altahan
+Created 16/09/2009
+Version 1.0
+
+HazelDev@outlook.com
+https://github.com/ei
+-->
+
+<SyntaxDefinition name="Registry" extensions=".reg">
+
+    <Environment> 
+        <Default color="Black" bgcolor="#FFFFFF"/>
+        <Selection color="Black" bgcolor="#C3C3FF"/>
+        <LineNumbers color="Gray" bgcolor="#EAEAEA"/>
+        <CaretMarker color="#F0F0F1"/>
+        <VRuler color="#E0E0E5"/>
+        
+        <FoldMargin bgcolor="#F3F3F3"/>
+        <FoldLine color="#A0A0A0" bgcolor="#F3F3F3"/>
+        <FoldMarker color="Black" bgcolor="#F3F3F3"/>
+        <SelectedFoldLine color="Black" bgcolor="#F3F3F3"/>
+        
+        <EOLMarkers color="#CACAD2"/>
+        <SpaceMarkers color="#B6B6C0"/>
+        <TabMarkers color="#B6B6C0"/>
+        <InvalidLines color="#B6B6C0"/>
+    </Environment>
+    
+    <Properties>
+        <Property name="LineComment" value=";"/>
+    </Properties>
+    
+    <Digits name="Digits" color="Black"/>
+    
+    <RuleSets>
+        <RuleSet ignorecase="false">
+        
+        <Delimiters>&amp;|\/()[]"',;@=:-</Delimiters>
+        
+            <Span name="LineComment" stopateol="true" color="Green" bold="false" italic="false">
+                <Begin>;</Begin>
+            </Span>
+            
+            <Span name="String" stopateol="true" color="#808080" bold="false" italic="false" escapecharacter="\">
+                <Begin>"</Begin>
+                <End>"</End>
+            </Span>
+            
+            <Span name="Variable" stopateol="true" color="#643EFF" bold="true" italic="false">
+                <Begin startofline="true">[</Begin>
+                <End>]</End>
+            </Span>
+            
+            <KeyWords name="Punctuation" color="Maroon" bold="false">
+                <Key word="@"/>
+                <Key word="="/>
+                <Key word=":"/>
+                <Key word="-"/>
+                <Key word=";"/>
+                <Key word=","/>
+                <Key word="["/>
+                <Key word="]"/>             
+            </KeyWords>
+        </RuleSet>
+    </RuleSets>
+</SyntaxDefinition>

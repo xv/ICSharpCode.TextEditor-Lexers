@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+CoffeeScript syntax highlighting
+Written by Ezra Altahan
+Created 12/02/2016
+Version 1.0
+
+HazelDev@outlook.com
+https://github.com/ei
+-->
+
+<SyntaxDefinition name="CoffeeScript" extensions=".coffee;.litcoffee">
+
+    <Environment> 
+        <Default color="Black" bgcolor="#FFFFFF"/>
+        <Selection color="Black" bgcolor="#C3C3FF"/>
+        <LineNumbers color="Gray" bgcolor="#EAEAEA"/>
+        <CaretMarker color="#F0F0F1"/>
+        <VRuler color="#E0E0E5"/>
+        
+        <FoldMargin bgcolor="#F3F3F3"/>
+        <FoldLine color="#A0A0A0" bgcolor="#F3F3F3"/>
+        <FoldMarker color="Black" bgcolor="#F3F3F3"/>
+        <SelectedFoldLine color="Black" bgcolor="#F3F3F3"/>
+        
+        <EOLMarkers color="#CACAD2"/>
+        <SpaceMarkers color="#B6B6C0"/>
+        <TabMarkers color="#B6B6C0"/>
+        <InvalidLines color="#B6B6C0"/>
+    </Environment>
+        
+    <Properties>
+        <Property name="LineComment" value="#"/>
+        <Property name="BlockCommentBegin" value="###"/>
+        <Property name="BlockCommentEnd" value="###"/>
+    </Properties>
+        
+    <Digits name="Digits" color="#BF382A"/>
+
+    <RuleSets>
+        <RuleSet ignorecase="false">
+        
+            <Delimiters>()[]{},:.`#=;+-*@/%~ &amp;|^&gt;&lt;</Delimiters>
+            
+            <Span name="MultiLineComment" stopateol="false" color="Green" bold="false" italic="false">
+                <Begin>###</Begin>
+                <End>###</End>
+            </Span>
+            
+            <Span name="LineComment" stopateol="true" color="Green" bold="false" italic="false">
+                <Begin>#</Begin>
+            </Span>
+               
+            <Span name="String" stopateol="false" color="#808080" bold="false" italic="false" escapecharacter="\">
+                <Begin>"</Begin>
+                <End>"</End>
+            </Span>
+            
+            <Span name="Char" stopateol="false" color="#808080" bold="false" italic="false" escapecharacter="\">
+                <Begin>'</Begin>
+                <End>'</End>
+            </Span>
+            
+            <MarkPrevious color="#172687" bold="false">:</MarkPrevious>
+            <MarkPrevious color="#82751A" bold="false">=</MarkPrevious>
+            <MarkFollowing color="Purple" bold="false">@</MarkFollowing>
+            <MarkFollowing color="SlateBlue" bold="false">.</MarkFollowing>
+            
+            <KeyWords name="Punctuation1" color="Purple" bold="false" italic="false">
+                <Key word="@"/>
+            </KeyWords>
+            
+            <KeyWords name="Keywords1" color="Blue" bold="false" italic="false">
+                <Key word="__bind"/>
+                <Key word="__extends"/>
+                <Key word="__hasProp"/>
+                <Key word="__indexOf"/>
+                <Key word="__slice"/>
+                <Key word="and"/>
+                <Key word="break"/>
+                <Key word="by"/>
+                <Key word="case"/>
+                <Key word="catch"/>
+                <Key word="class"/>
+                <Key word="const"/>
+                <Key word="continue"/>
+                <Key word="default"/>
+                <Key word="delete"/>
+                <Key word="do"/>
+                <Key word="each"/>
+                <Key word="else"/>
+                <Key word="enum"/>
+                <Key word="export"/>
+                <Key word="extends"/>
+                <Key word="finally"/>
+                <Key word="for"/>
+                <Key word="function"/>
+                <Key word="get"/>
+                <Key word="if"/>
+                <Key word="import"/>
+                <Key word="instanceof"/>
+                <Key word="jQuery"/>
+                <Key word="let"/>
+                <Key word="loop"/>
+                <Key word="native"/>
+                <Key word="new"/>   
+                <Key word="prototype"/>
+                <Key word="return"/>
+                <Key word="set"/>
+                <Key word="switch"/>
+                <Key word="then"/>
+                <Key word="throw"/>
+                <Key word="try"/>
+                <Key word="typeof"/>
+                <Key word="unless"/>
+                <Key word="until"/>
+                <Key word="var"/>
+                <Key word="void"/>
+                <Key word="when"/>
+                <Key word="where"/>
+                <Key word="while"/>
+                <Key word="with"/>
+                <Key word="yield"/>
+            </KeyWords>
+            
+            <KeyWords name="Keywords2" color="DarkViolet" bold="false" italic ="false">
+                <Key word="Array"/>
+                <Key word="Boolean"/>
+                <Key word="Date"/>
+                <Key word="Error"/>
+                <Key word="EvalError"/>
+                <Key word="Function"/>
+                <Key word="GLOBAL"/>
+                <Key word="Math"/>
+                <Key word="Number"/>
+                <Key word="Object"/>
+                <Key word="RangeError"/>
+                <Key word="ReferenceError"/>
+                <Key word="RegExp"/>
+                <Key word="String"/>
+                <Key word="SyntaxError"/>
+                <Key word="TypeError"/>
+                <Key word="URIError"/>
+                <Key word="alert"/>
+                <Key word="clearInterval"/>
+                <Key word="clearTimeout"/>
+                <Key word="console"/>
+                <Key word="decodeURI"/>
+                <Key word="decodeURIComponent"/>
+                <Key word="document"/>
+                <Key word="encodeURI"/>
+                <Key word="encodeURIComponent"/>
+                <Key word="escape"/>
+                <Key word="eval"/>
+                <Key word="exports"/>
+                <Key word="history"/>
+                <Key word="iconstructor"/>
+                <Key word="isFinite"/>
+                <Key word="isNaN"/>
+                <Key word="location"/>
+                <Key word="navigator"/>
+                <Key word="parseFloat"/>
+                <Key word="parseInt"/>
+                <Key word="process"/>
+                <Key word="prompt"/>
+                <Key word="require"/>
+                <Key word="screen"/>
+                <Key word="setInterval"/>
+                <Key word="setTimeout"/>
+                <Key word="super"/>
+                <Key word="unescape"/>
+                <Key word="window"/>
+            </KeyWords>
+                        
+            <KeyWords name="Keywords3" color="Teal" bold="false" italic ="false">
+                <Key word="Infinity"/>
+                <Key word="NaN"/>
+                <Key word="false"/>
+                <Key word="in"/>
+                <Key word="is"/>
+                <Key word="isnt"/>
+                <Key word="no"/>
+                <Key word="not"/>
+                <Key word="null"/>
+                <Key word="of"/>
+                <Key word="off"/>
+                <Key word="on"/>
+                <Key word="or"/>
+                <Key word="this"/>
+                <Key word="true"/>
+                <Key word="undefined"/>
+                <Key word="yes"/>
+            </KeyWords>
+        </RuleSet>
+    </RuleSets>
+</SyntaxDefinition>
