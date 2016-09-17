@@ -36,7 +36,7 @@ That makes 73 languages in total.
 
 Usage
 -----
-If you are on this page, you most likely already know how to activate the lexer and use it. For the newbies, this is how you do it:
+If you are on this page, you most likely already know how to activate the lexer and use it.<br/>For the newbies, this is how you do it:
 
 C#:
 ```c#
