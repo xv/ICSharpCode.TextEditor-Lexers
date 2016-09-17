@@ -31,7 +31,7 @@ That makes 73 languages in total.
 
 > **Notes:**
 
-> - **PHP**: Heredoc is not supported. The syntax parser simply can't do it.
+> - **PHP**: Heredoc highlighting is not supported. The syntax parser simply can't do it.
 > - **CSS**: Omitting the last semicolon in the block is not supported. Same reason as above.
 
 Usage
