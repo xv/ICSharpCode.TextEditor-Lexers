@@ -76,3 +76,7 @@ End If
 ```
 
 For more information on XSHD files,  [see here](https://github.com/icsharpcode/SharpDevelop/wiki/Syntax-highlighting#attach-a-syntaxhighlighting-to-the-text-editor).
+
+License
+--------
+[MIT License](https://opensource.org/licenses/MIT)
