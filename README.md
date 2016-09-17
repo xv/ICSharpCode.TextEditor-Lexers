@@ -34,8 +34,6 @@ That makes 73 languages in total.
 > - **PHP**: Heredoc is not supported. The syntax parser simply can't do it.
 > - **CSS**: Omitting the last semicolon in the block is not supported. Same reason as above.
 
-----------
-
 Usage
 -----
 If you are on this page, you most likely already know how to activate the lexer and use it. For the newbies, this is how you do it:
