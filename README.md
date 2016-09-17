@@ -6,8 +6,12 @@ All lexers were created for  ICSharpCode.TextEditor <kbd>version 3.2</kbd>. They
 
 ----------
 
+<p align="center">
+  <img src ="http://i.imgur.com/Pif99Td.png" />
+</p>
+
 Languages
--------------------------------
+---------
 List of all supported languages, sorted alphabetically:
 
 A            | B     | C            | D      | E      | F          | G       | H       | I       | J          | K       | L    | N       | O     | P          | R        | S        | V           | X
@@ -33,7 +37,7 @@ That makes 73 languages in total.
 ----------
 
 Usage
--------------------
+-----
 If you are on this page, you most likely already know how to activate the lexer and use it. For the newbies, this is how you do it:
 
 C#:
@@ -70,4 +74,5 @@ Else
 	MessageBox.Show("Directory was not found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
 End If
 ```
+
 For more information on XSHD files,  [see here](https://github.com/icsharpcode/SharpDevelop/wiki/Syntax-highlighting#attach-a-syntaxhighlighting-to-the-text-editor).
