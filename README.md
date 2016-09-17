@@ -49,7 +49,7 @@ if (Directory.Exists(synDir))
     fsmProvider = new FileSyntaxModeProvider(synDir);
     // attach to the text editor
     HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmProvider);
-    // activate the highlighting, use the name from the SyntaxDefinition node
+    // activate the highlighting, use the name from the SyntaxDefinition node in the .xshd file
     TextEditorControl.SetHighlighting("YourHighlighting");
 } else {
 	MessageBox.Show("Directory was not found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -66,7 +66,7 @@ If Directory.Exists(synDir) Then
 	fsmProvider = New FileSyntaxModeProvider(synDir)
 	' attach to the text editor
 	HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmProvider)
-	' activate the highlighting, use the name from the SyntaxDefinition node
+	' activate the highlighting, use the name from the SyntaxDefinition node in the .xshd file
 	TextEditorControl.SetHighlighting("YourHighlighting")
 Else
 	MessageBox.Show("Directory was not found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
