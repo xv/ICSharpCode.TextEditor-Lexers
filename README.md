@@ -38,7 +38,7 @@ Usage
 -----
 If you are on this page, you most likely already know how to activate the lexer and use it.<br/>For a complete noob, this is how you do it:
 
-C#:
+C#
 ```c#
 string synDir = @"resources\highlighting\\"; // insert the directory path of the desired .xshd file
 FileSyntaxModeProvider fsmProvider;          // syntax provider
@@ -56,7 +56,7 @@ if (Directory.Exists(synDir))
 }
 ```
 
-VB.NET:
+VB.NET
 ```vb.net
 Dim synDir As String = "resources\highlighting" ' insert the directory path of the desired .xshd file
 Dim fsmProvider As FileSyntaxModeProvider       ' syntax provider
