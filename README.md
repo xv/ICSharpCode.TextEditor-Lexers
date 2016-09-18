@@ -77,4 +77,4 @@ For more information on XSHD files,  [see here](https://github.com/icsharpcode/S
 
 License
 --------
-[MIT License](https://opensource.org/licenses/MIT)
+This project is distributed under the [MIT License](https://opensource.org/licenses/MIT)
