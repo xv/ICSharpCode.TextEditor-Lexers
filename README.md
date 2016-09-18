@@ -16,8 +16,8 @@ List of all supported languages, sorted alphabetically:
 
 A            | B     | C            | D      | E      | F          | G       | H       | I       | J          | K       | L    | N       | O     | P          | R        | S        | V           | X
 -------------|-------|--------------|--------|--------|------------|---------|---------|---------|------------|---------|------|---------|-------|------------|----------|----------|-------------|----
-ActionScript | Batch | C#           | D      | Eiffel | F#         | Go      | Haskell | Icon    | Java       | KiXtart | Lean | Nemerle | Obj-C | ParaSail   | R        | Scala    | Vala        | XML
-Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | Haxe    | ILYC    | JavaScript | Kotlin  | Lisp | Nim     | OCaml | Pascal     | Registry | Solidity | VB.NET      |
+ActionScript | Batch | C#           | D      | Eiffel | F#         | Go      | Haskell | Icon    | Java       | KiXtart | Lean | Nemerle | Obj-C | ParaSail   | R        | Scala    | Vala        | X10
+Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | Haxe    | ILYC    | JavaScript | Kotlin  | Lisp | Nim     | OCaml | Pascal     | Registry | Solidity | VB.NET      | XML
 ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | HTML    | INI/INF | JSON       |         | Lua  |         |       | PHP        | Resource | Spike    | VBScript    |
 Assembly     |       | Ceylon       |        |        | Fortran95  |         |         |         | Julia      |         |      |         |       | Pike       | Rust     | SQF      | Verilog     |
 AutoHotkey   |       | ChucK        |        |        |            |         |         |         |            |         |      |         |       | PowerShell |          | SQL      | VHDL        |
@@ -27,7 +27,7 @@ AutoHotkey   |       | ChucK        |        |        |            |         |  
              |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |             |
              |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |             |
  
-That makes 73 languages in total.
+That makes 74 languages in total.
 
 > **Notes**
 
