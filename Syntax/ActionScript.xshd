@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ActionScript syntax highlighting
+Written by Ezra Altahan
+Created 17/01/2013 | Updated 19/09/2016
+Version 1.2
+
+HazelDev@outlook.com
+https://github.com/ei
+-->
+
+<SyntaxDefinition name="ActionScript" extensions=".as;.mx">
+    
+    <Environment> 
+        <Default color="Black" bgcolor="#FFFFFF"/>
+        <Selection color="Black" bgcolor="#C3C3FF"/>
+        <LineNumbers color="Gray" bgcolor="#EAEAEA"/>
+        <CaretMarker color="#F0F0F1"/>
+        <VRuler color="#E0E0E5"/>
+        
+        <FoldMargin bgcolor="#F3F3F3"/>
+        <FoldLine color="#A0A0A0" bgcolor="#F3F3F3"/>
+        <FoldMarker color="Black" bgcolor="#F3F3F3"/>
+        <SelectedFoldLine color="Black" bgcolor="#F3F3F3"/>
+        
+        <EOLMarkers color="#CACAD2"/>
+        <SpaceMarkers color="#B6B6C0"/>
+        <TabMarkers color="#B6B6C0"/>
+        <InvalidLines color="#B6B6C0"/>
+    </Environment>
+    
+    <Properties>
+        <Property name="LineComment" value="//"/>
+        <Property name="BlockCommentBegin" value="/*"/>
+        <Property name="BlockCommentEnd" value="*/"/>
+    </Properties>
+    
+    <Digits name="Digits" color="#BF382A"/>
+    
+    <RuleSets>
+        <RuleSet ignorecase="false">
+        
+        <Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}[]:;"' ,   .?</Delimiters>
+        
+            <Span name="LineComment" rule="Documentation" stopateol="true" color="Green" bold="false" italic="false">
+                <Begin>//</Begin>
+            </Span>
+            
+            <Span name="BlockComment" rule="Documentation" stopateol="false" color="Green" bold="false" italic="false">
+                <Begin>/*</Begin>
+                <End>*/</End>
+            </Span>
+            
+            <Span name="String" stopateol="true" color="#808080" bold="false" italic="false" escapecharacter='"'>
+                <Begin>"</Begin>
+                <End>"</End>
+            </Span>
+            
+            <Span name="Char" stopateol="true" color="#808080" bold="false" italic="false" escapecharacter="\">
+                <Begin>'</Begin>
+                <End>'</End>
+            </Span>
+            
+            <Span name="Preprocessor" stopateol="true" color="Sienna" bold="false" italic="false">
+                <Begin>#</Begin>
+            </Span>
+            
+            <KeyWords name="Keywords1" color="Blue" bold="false" italic="false">
+                <Key word="as"/>
+                <Key word="break"/>
+                <Key word="case"/>
+                <Key word="catch"/>
+                <Key word="class"/>
+                <Key word="continue"/>
+                <Key word="default"/>
+                <Key word="delete"/>
+                <Key word="do"/>
+                <Key word="dynamic"/>
+                <Key word="each"/>
+                <Key word="else"/>
+                <Key word="extends"/>
+                <Key word="false"/>
+                <Key word="finally"/>
+                <Key word="for"/>
+                <Key word="function"/>
+                <Key word="get"/>
+                <Key word="if"/>
+                <Key word="implements"/>
+                <Key word="import"/>
+                <Key word="in"/>
+                <Key word="instanceof"/>
+                <Key word="interface"/>
+                <Key word="internal"/>
+                <Key word="is"/>
+                <Key word="namespace"/>
+                <Key word="native"/>
+                <Key word="new"/>
+                <Key word="null"/>
+                <Key word="override"/>
+                <Key word="package"/>
+                <Key word="private"/>
+                <Key word="protected"/>
+                <Key word="public"/>
+                <Key word="return"/>
+                <Key word="set"/>
+                <Key word="static"/>
+                <Key word="super"/>
+                <Key word="switch"/>
+                <Key word="this"/>
+                <Key word="throw"/>
+                <Key word="to"/>
+                <Key word="true"/>
+                <Key word="try"/>
+                <Key word="typeof"/>
+                <Key word="use"/>
+                <Key word="void"/>
+                <Key word="while"/>
+                <Key word="with"/>
+            </KeyWords>
+            
+            <KeyWords name="Keywords2" color="DarkViolet" bold="false" italic="false">
+                <Key word="var"/>           
+                <Key word="const"/>
+            </KeyWords>
+        </RuleSet>
+        
+        <RuleSet name="Documentation" ignorecase="false">
+            <Delimiters>~!%^*()-+=|\#/{}[]:;"'&lt;&gt; , .?</Delimiters>
+            
+            <KeyWords name="DocKeywords1" color="Maroon" bold="false" italic="false">
+                <Key word="@param"/>
+                <Key word="@see"/>
+                <Key word="@return"/>
+                <Key word="@author"/>
+                <Key word="@eventType"/>
+                <Key word="@copy"/>
+                <Key word="@default"/>
+                <Key word="@example"/>
+                <Key word="@exampleText"/>
+                <Key word="@includeExample"/>
+                <Key word="@inheritDoc"/>
+                <Key word="@internal"/>
+                <Key word="@throws"/>
+                <Key word="@since"/>
+            </KeyWords>
+        </RuleSet>
+    </RuleSets>
+</SyntaxDefinition>
