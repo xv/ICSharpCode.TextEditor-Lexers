@@ -65,7 +65,13 @@ https://github.com/ei
             <Span name="Preprocessor" stopateol="true" color="Sienna" bold="false" italic="false">
                 <Begin>#</Begin>
             </Span>
+
+            <MarkFollowing color="Sienna" bold="false" italic="false">#</MarkFollowing>
             
+            <KeyWords name="Punctuation" color="Sienna" bold="false">
+                <Key word="#"/>
+            </KeyWords>
+
             <KeyWords name="Keywords1" color="Blue" bold="false" italic="false">
                 <Key word="as"/>
                 <Key word="break"/>
@@ -89,6 +95,7 @@ https://github.com/ei
                 <Key word="implements"/>
                 <Key word="import"/>
                 <Key word="in"/>
+                <Key word="include"/>
                 <Key word="instanceof"/>
                 <Key word="interface"/>
                 <Key word="internal"/>
