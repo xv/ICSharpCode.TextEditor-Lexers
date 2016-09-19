@@ -91,6 +91,7 @@ https://github.com/ei
                 <Key word="transaction"/>
                 <Key word="typedef"/>
                 <Key word="union"/>
+                <Key word="void"/>
                 <Key word="volatile"/>
                 <Key word="when"/>
                 <Key word="while"/>
