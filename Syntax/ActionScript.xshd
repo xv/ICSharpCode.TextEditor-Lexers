@@ -78,6 +78,7 @@ https://github.com/ei
                 <Key word="case"/>
                 <Key word="catch"/>
                 <Key word="class"/>
+                <Key word="const"/>
                 <Key word="continue"/>
                 <Key word="default"/>
                 <Key word="delete"/>
@@ -95,7 +96,6 @@ https://github.com/ei
                 <Key word="implements"/>
                 <Key word="import"/>
                 <Key word="in"/>
-                <Key word="include"/>
                 <Key word="instanceof"/>
                 <Key word="interface"/>
                 <Key word="internal"/>
@@ -121,14 +121,10 @@ https://github.com/ei
                 <Key word="try"/>
                 <Key word="typeof"/>
                 <Key word="use"/>
+                <Key word="var"/>
                 <Key word="void"/>
                 <Key word="while"/>
                 <Key word="with"/>
-            </KeyWords>
-            
-            <KeyWords name="Keywords2" color="DarkViolet" bold="false" italic="false">
-                <Key word="var"/>           
-                <Key word="const"/>
             </KeyWords>
         </RuleSet>
         
