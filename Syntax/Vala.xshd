@@ -3,8 +3,8 @@
 <!-- 
 Vala syntax highlighting
 Written by Ezra Altahan
-Created 04/05/2016
-Version 1.0
+Created 04/05/2016 | Updated 22/09/2016
+Version 1.1
 
 HazelDev@outlook.com
 https://github.com/ei
@@ -101,6 +101,7 @@ https://github.com/ei
                 <Key word="enum"/>
                 <Key word="errordomain"/>
                 <Key word="extern"/>
+                <Key word="false"/>
                 <Key word="finally"/>
                 <Key word="for"/>
                 <Key word="foreach"/>
@@ -134,6 +135,7 @@ https://github.com/ei
                 <Key word="this"/>
                 <Key word="throw"/>
                 <Key word="throws"/>
+                <Key word="true"/>
                 <Key word="try"/>
                 <Key word="typeof"/>
                 <Key word="unowned"/>
@@ -147,13 +149,8 @@ https://github.com/ei
                 <Key word="while"/>
                 <Key word="yield"/>
             </KeyWords>
-            
-            <KeyWords name="Keywords2" color="Teal" bold="false">
-                <Key word="true"/>
-                <Key word="false"/>
-            </KeyWords>
-                        
-            <KeyWords name="Keywords3" color="DarkViolet" bold="false">
+                                    
+            <KeyWords name="Keywords2" color="DarkViolet" bold="false">
                 <Key word="bool"/>
                 <Key word="char"/>
                 <Key word="double"/>
