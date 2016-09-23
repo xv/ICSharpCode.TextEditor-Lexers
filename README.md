@@ -19,7 +19,7 @@ A            | B     | C            | D      | E      | F          | G       | H
 ActionScript | Batch | C#           | D      | Eiffel | F#         | Go      | Haskell | Icon    | Java       | KiXtart | Lean | Nemerle | Obj-C | ParaSail   | R        | Scala    | Vala        | X10
 Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | Haxe    | ILYC    | JavaScript | Kotlin  | Lisp | Nim     | OCaml | Pascal     | Registry | Solidity | VB.NET      | XC
 ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | HTML    | INI/INF | JSON       |         | Lua  |         |       | PHP        | Resource | Spike    | VBScript    | XML
-Assembly     |       | Ceylon       |        |        | Fortran95  |         |         |         | Julia      |         |      |         |       | Pike       | Rust     | SQF      | Verilog     |
+Assembly     |       | Ceylon       |        |        | Fortran95  |         |         |         | Julia      |         |      |         |       | Pike       | Rust     | SQF      | Verilog     | Xtend
 AutoHotkey   |       | ChucK        |        |        |            |         |         |         |            |         |      |         |       | PowerShell |          | SQL      | VHDL        |
              |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | Python     |          | Swift    | VS Solution |
              |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       |            |          |          |             |
@@ -27,7 +27,7 @@ AutoHotkey   |       | ChucK        |        |        |            |         |  
              |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |             |
              |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |             |
  
-That makes 75 languages in total.
+That makes 76 languages in total.
 
 > **Notes**
 
