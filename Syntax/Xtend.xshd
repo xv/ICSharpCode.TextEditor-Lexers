@@ -86,6 +86,7 @@ https://github.com/ei
                 <Key word="enum"/>
                 <Key word="extends"/>
                 <Key word="extension"/>
+                <Key word="false"/>
                 <Key word="final"/>
                 <Key word="finally"/>
                 <Key word="for"/>
@@ -107,6 +108,7 @@ https://github.com/ei
                 <Key word="this"/>
                 <Key word="throw"/>
                 <Key word="throws"/>
+                <Key word="true"/>
                 <Key word="try"/>
                 <Key word="void"/>
                 <Key word="while"/>
