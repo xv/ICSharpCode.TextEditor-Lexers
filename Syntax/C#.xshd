@@ -73,7 +73,7 @@ https://github.com/ei
                 <End>'</End>
             </Span>
             
-            <Span name="Preprocessor" rule="PreprocessorSet" stopateol="true" color="Green" bold="false" italic="false">
+            <Span name="Preprocessor" rule="PreprocessorSet" stopateol="true" color="#808080" bold="false" italic="false">
                 <Begin>#</Begin>
             </Span>
             
@@ -222,7 +222,7 @@ https://github.com/ei
         <RuleSet name="PreprocessorSet" ignorecase="false">
             <Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}[]:;"' ,   .?</Delimiters>
             
-            <KeyWords name="Preprocessor" color="Green" bold="true" italic="false">
+            <KeyWords name="Preprocessor" color="#808080" bold="false" italic="false">
                 <Key word="if"/>
                 <Key word="else"/>
                 <Key word="elif"/>
