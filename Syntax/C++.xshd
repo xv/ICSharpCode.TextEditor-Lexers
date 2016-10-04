@@ -251,6 +251,7 @@ https://github.com/ei
                 <Key word="interface"/>
                 <Key word="intmax_t"/>
                 <Key word="intptr_t"/>
+                <Key word="ipv4_t"/>
                 <Key word="jmp_buf"/>
                 <Key word="key_t"/>
                 <Key word="ldiv_t"/>
@@ -262,6 +263,7 @@ https://github.com/ei
                 <Key word="off_t"/>
                 <Key word="override"/>
                 <Key word="pid_t"/>
+                <Key word="port_t"/>
                 <Key word="private"/>
                 <Key word="protected"/>
                 <Key word="pthread_attr_t"/>
