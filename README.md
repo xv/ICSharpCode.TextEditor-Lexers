@@ -1,5 +1,5 @@
-About this project
-===================
+Synopsis 📜
+===========
 This project is a compilation of lexers I had written for [SharpDevelop](https://github.com/icsharpcode)'s TextEditor component. I am indeed late to the party, as the component is no longer supported by SharpDevelop team; however, I spent a good chunk of time writing these lexers through the years and now I thought why not make them open source for everyone who's still using the component.
 
 All lexers were created exclusively for  ICSharpCode.TextEditor <kbd>version 3.2</kbd>. They were not tested on any earlier or later releases.
