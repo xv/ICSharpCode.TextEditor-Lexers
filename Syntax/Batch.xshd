@@ -3,26 +3,25 @@
 <!-- 
 Batch syntax highlighting
 Written by Ezra Altahan
-10/02/2014 | Updated 13/09/2016
+10/02/2014 | Updated 16/10/2016
 Version 1.1
 
-HazelDev@outlook.com
+hello@exr.be
 https://github.com/ei
 -->
 
 <SyntaxDefinition name="Batch" extensions="*.bat;*.cmd">
 
-    <Environment> 
+    <Environment>
         <Default color="Black" bgcolor="#FFFFFF"/>
         <Selection color="Black" bgcolor="#C3C3FF"/>
-        <LineNumbers color="Gray" bgcolor="#EAEAEA"/>
+        <LineNumbers color="Gray" bgcolor="#FFFFFF"/>
         <CaretMarker color="#F0F0F1"/>
         <VRuler color="#E0E0E5"/>
         
-        <FoldMargin bgcolor="#F3F3F3"/>
-        <FoldLine color="#A0A0A0" bgcolor="#F3F3F3"/>
-        <FoldMarker color="Black" bgcolor="#F3F3F3"/>
-        <SelectedFoldLine color="Black" bgcolor="#F3F3F3"/>
+        <FoldLine color="#A0A0A0" bgcolor="#FFFFFF"/>
+        <FoldMarker color="Black" bgcolor="#FFFFFF"/>
+        <SelectedFoldLine color="Black" bgcolor="#FFFFFF"/>
         
         <EOLMarkers color="#CACAD2"/>
         <SpaceMarkers color="#B6B6C0"/>
