@@ -40,6 +40,10 @@ If you are on this page, you most likely already know how to activate the lexer 
 
 C#
 ```c#
+using ICSharpCode.TextEditor.Document;
+using System.IO;
+```
+```c#
 string synDir = @"resources\highlighting\\"; // insert the directory path of the desired .xshd file
 FileSyntaxModeProvider fsmProvider;          // syntax provider
 
@@ -58,6 +62,10 @@ if (Directory.Exists(synDir))
 
 VB.NET
 ```vb.net
+Imports ICSharpCode.TextEditor.Document
+Imports System.IO
+```
+```vb.net
 Dim synDir As String = "resources\highlighting" ' insert the directory path of the desired .xshd file
 Dim fsmProvider As FileSyntaxModeProvider       ' syntax provider
 
@@ -75,6 +83,6 @@ End If
 
 For more information on XSHD files,  [see here](https://github.com/icsharpcode/SharpDevelop/wiki/Syntax-highlighting#attach-a-syntaxhighlighting-to-the-text-editor).
 
-License
---------
+Legal
+-----
 This project is distributed under the [MIT License](https://opensource.org/licenses/MIT)
