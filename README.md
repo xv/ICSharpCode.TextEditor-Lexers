@@ -70,7 +70,7 @@ Dim synDir As String = "resources\highlighting" ' insert the directory path of t
 Dim fsmProvider As FileSyntaxModeProvider       ' syntax provider
 
 If Directory.Exists(synDir) Then
-  ' create new provider with the highlighting directory
+	' create new provider with the highlighting directory
 	fsmProvider = New FileSyntaxModeProvider(synDir)
 	' attach to the text editor
 	HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmProvider)
