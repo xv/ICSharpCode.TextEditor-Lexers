@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- syntaxdefinition for HTML 2000 by Mike Krueger -->
-<!-- Revised and cleaned by HazelDev 07/02/2016 -->
+<!-- Revised and cleaned by Ezra Altahan 16/10/2016 -->
 
 <SyntaxDefinition name="HTML" extensions=".html;.htm;.xhtml;.shtml;.shtm;.xht;.hta">
 
     <Environment> 
         <Default color="Black" bgcolor="#FFFFFF"/>
         <Selection color="Black" bgcolor="#C3C3FF"/>
-        <LineNumbers color="Gray" bgcolor="#EAEAEA"/>
+        <LineNumbers color="Gray" bgcolor="#FFFFFF"/>
         <CaretMarker color="#F0F0F1"/>
         <VRuler color="#E0E0E5"/>
         
-        <FoldMargin bgcolor="#F3F3F3"/>
-        <FoldLine color="#A0A0A0" bgcolor="#F3F3F3"/>
-        <FoldMarker color="Black" bgcolor="#F3F3F3"/>
-        <SelectedFoldLine color="Black" bgcolor="#F3F3F3"/>
+        <FoldLine color="#A0A0A0" bgcolor="#FFFFFF"/>
+        <FoldMarker color="Black" bgcolor="#FFFFFF"/>
+        <SelectedFoldLine color="Black" bgcolor="#FFFFFF"/>
         
         <EOLMarkers color="#CACAD2"/>
         <SpaceMarkers color="#B6B6C0"/>
