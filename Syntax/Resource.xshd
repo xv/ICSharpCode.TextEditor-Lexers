@@ -3,10 +3,10 @@
 <!-- 
 Resource syntax highlighting
 Written by Ezra Altahan
-Created 13/08/2015
+Created 13/08/2015 | Updated 16/10/2016
 Version 1.0
 
-HazelDev@outlook.com
+hello@exr.be
 https://github.com/ei
 -->
 
@@ -19,10 +19,9 @@ https://github.com/ei
         <CaretMarker color="#F0F0F1"/>
         <VRuler color="#E0E0E5"/>
         
-        <FoldMargin bgcolor="#F3F3F3"/>
-        <FoldLine color="#A0A0A0" bgcolor="#F3F3F3"/>
-        <FoldMarker color="Black" bgcolor="#F3F3F3"/>
-        <SelectedFoldLine color="Black" bgcolor="#F3F3F3"/>
+        <FoldLine color="#A0A0A0" bgcolor="#FFFFFF"/>
+        <FoldMarker color="Black" bgcolor="#FFFFFF"/>
+        <SelectedFoldLine color="Black" bgcolor="#FFFFFF"/>
         
         <EOLMarkers color="#CACAD2"/>
         <SpaceMarkers color="#B6B6C0"/>
