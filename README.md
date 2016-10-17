@@ -56,7 +56,7 @@ if (Directory.Exists(synDir))
     // activate the highlighting, use the name from the SyntaxDefinition node in the .xshd file
     TextEditorControl.SetHighlighting("YourHighlighting");
 } else {
-	MessageBox.Show("Directory was not found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+	MessageBox.Show("Directory not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 }
 ```
 
@@ -77,7 +77,7 @@ If Directory.Exists(synDir) Then
 	' activate the highlighting, use the name from the SyntaxDefinition node in the .xshd file
 	TextEditorControl.SetHighlighting("YourHighlighting")
 Else
-	MessageBox.Show("Directory was not found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+	MessageBox.Show("Directory not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
 End If
 ```
 
