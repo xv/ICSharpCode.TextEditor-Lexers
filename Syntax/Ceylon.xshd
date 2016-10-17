@@ -3,10 +3,10 @@
 <!-- 
 Ceylon syntax highlighting
 Written by Ezra Altahan
-Created 14/02/2016
+Created 14/02/2016 | Updated 16/10/2016
 Version 1.0
 
-HazelDev@outlook.com
+hello@exr.be
 https://github.com/ei
 -->
 
@@ -62,7 +62,7 @@ https://github.com/ei
                 <End>'</End>
             </Span>
             
-            <MarkFollowing color="Black" bold="false" italic="false" underline="true">class</MarkFollowing>
+            <MarkFollowing color="Black" bold="false" italic="true">class</MarkFollowing>
             <MarkFollowing color="Navy" bold="true" italic="false">import</MarkFollowing>
             <MarkFollowing color="Green" bold="false" italic="false">@</MarkFollowing>
             <MarkFollowing color="MidnightBlue" bold="false" italic="false">#</MarkFollowing>
