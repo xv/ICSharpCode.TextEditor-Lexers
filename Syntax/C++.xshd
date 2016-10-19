@@ -10,7 +10,7 @@ hello@exr.be
 https://github.com/ei
 -->
 
-<SyntaxDefinition name="C++" extensions=".c;.h;.cc;.C;.cpp;.hpp">
+<SyntaxDefinition name="C++" extensions=".c;.h;.cc;.C;.cpp;.hpp;.sqm;.ext">
 
     <Environment> 
         <Default color="Black" bgcolor="#FFFFFF"/>
