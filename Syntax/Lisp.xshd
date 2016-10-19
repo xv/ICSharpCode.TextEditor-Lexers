@@ -3,8 +3,8 @@
 <!-- 
 Lisp syntax highlighting
 Written by Ezra Altahan
-Created 29/09/2013 | Updated 16/10/2016
-Version 1.0
+Created 29/09/2013 | Updated 19/10/2016
+Version 1.1
 
 hello@exr.be
 https://github.com/ei
@@ -110,12 +110,16 @@ https://github.com/ei
                 <Key word="cddr"/>
                 <Key word="cdr"/>
                 <Key word="cerror"/>
+                <Key word="check-type"/>
+                <Key word="compile"/>
                 <Key word="complement"/>
                 <Key word="cond"/>
                 <Key word="cons"/>
                 <Key word="consp"/>
                 <Key word="continue"/>
                 <Key word="cos"/>
+                <Key word="create-queue"/>
+                <Key word="declare"/>
                 <Key word="defconstant"/>
                 <Key word="defmacro"/>
                 <Key word="defmethod"/>
@@ -140,6 +144,7 @@ https://github.com/ei
                 <Key word="exp"/>
                 <Key word="expt"/>
                 <Key word="float"/>
+                <Key word="format"/>
                 <Key word="funcall"/>
                 <Key word="function"/>
                 <Key word="gensym"/>
@@ -149,7 +154,9 @@ https://github.com/ei
                 <Key word="hash"/>
                 <Key word="identity"/>
                 <Key word="if"/>
+                <Key word="ignore"/>
                 <Key word="in-package"/>
+                <Key word="inline"/>
                 <Key word="integer"/>
                 <Key word="intern"/>
                 <Key word="lables"/>
@@ -176,6 +183,7 @@ https://github.com/ei
                 <Key word="loop"/>
                 <Key word="make"/>
                 <Key word="make"/>
+                <Key word="make-array"/>
                 <Key word="mapc"/>
                 <Key word="mapcan"/>
                 <Key word="mapcar"/>
@@ -225,6 +233,7 @@ https://github.com/ei
                 <Key word="sqrt"/>
                 <Key word="sublis"/>
                 <Key word="subst"/>
+                <Key word="svref"/>
                 <Key word="symbol"/>
                 <Key word="symbol"/>
                 <Key word="symbol"/>
@@ -235,6 +244,7 @@ https://github.com/ei
                 <Key word="truncate"/>
                 <Key word="unless"/>
                 <Key word="value"/>
+                <Key word="values"/>
                 <Key word="when"/>
                 <Key word="zerop"/>
             </KeyWords>
