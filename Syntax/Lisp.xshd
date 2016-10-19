@@ -40,7 +40,7 @@ https://github.com/ei
     <RuleSets>
         <RuleSet ignorecase="false">
         
-            <Delimiters>`*()[]{}+=|\/:;"'</Delimiters>
+            <Delimiters>`*()[]{}=|\/:;"'</Delimiters>
         
             <Span name="LineComment" stopateol="true" color="Green" bold="false" italic="false">
                 <Begin>;</Begin>
