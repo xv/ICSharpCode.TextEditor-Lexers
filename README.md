@@ -14,20 +14,20 @@ Languages
 ---------
 List of all supported languages, sorted alphabetically:
 
-A            | B     | C            | D      | E      | F          | G       | H       | I       | J          | K       | L    | N       | O     | P          | R        | S        | V           | X
--------------|-------|--------------|--------|--------|------------|---------|---------|---------|------------|---------|------|---------|-------|------------|----------|----------|-------------|----
-ActionScript | Batch | C#           | D      | Eiffel | F#         | Go      | Haskell | Icon    | Java       | KiXtart | Lean | Nemerle | Obj-C | ParaSail   | R        | Scala    | Vala        | X10
-Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | Haxe    | ILYC    | JavaScript | Kotlin  | Lisp | Nim     | OCaml | Pascal     | Registry | Solidity | VB.NET      | XC
-ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | HTML    | INI/INF | JSON       |         | Lua  |         |       | PHP        | Resource | Spike    | VBScript    | XML
-Assembly     |       | Ceylon       |        |        | Fortran95  |         |         |         | Julia      |         |      |         |       | Pike       | Rust     | SQF      | Verilog     | Xtend
-AutoHotkey   |       | ChucK        |        |        |            |         |         |         |            |         |      |         |       | PowerShell |          | SQL      | VHDL        |
-             |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | Python     |          | Swift    | VS Solution |
-             |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       |            |          |          |             |
-             |       | CoffeeScript |        |        |            |         |         |         |            |         |      |         |       |            |          |          |             |
-             |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |             |
-             |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |             |
+A            | B     | C            | D      | E      | F          | G       | H       | I       | J          | K       | L    | N       | O     | P          | R        | S        | T          | V           | X
+-------------|-------|--------------|--------|--------|------------|---------|---------|---------|------------|---------|------|---------|-------|------------|----------|----------|------------|-------------|----
+ActionScript | Batch | C#           | D      | Eiffel | F#         | Go      | Haskell | Icon    | Java       | KiXtart | Lean | Nemerle | Obj-C | ParaSail   | R        | Scala    | TypeScript | Vala        | X10
+Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | Haxe    | ILYC    | JavaScript | Kotlin  | Lisp | Nim     | OCaml | Pascal     | Registry | Solidity |            | VB.NET      | XC
+ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | HTML    | INI/INF | JSON       |         | Lua  |         |       | PHP        | Resource | Spike    |            | VBScript    | XML
+Assembly     |       | Ceylon       |        |        | Fortran95  |         |         |         | Julia      |         |      |         |       | Pike       | Rust     | SQF      |            | Verilog     | Xtend
+AutoHotkey   |       | ChucK        |        |        |            |         |         |         |            |         |      |         |       | PowerShell |          | SQL      |            | VHDL        |
+             |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | Python     |          | Swift    |            | VS Solution |
+             |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
+             |       | CoffeeScript |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
+             |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
+             |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
  
-That makes 76 languages in total.
+That makes 77 languages in total.
 
 > **Notes**
 
