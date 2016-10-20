@@ -36,7 +36,7 @@ That makes 78 languages in total.
 
 Usage
 -----
-If you are on this page, you most likely already know how to activate the lexer and use it.<br/>For a complete noob, this is how you do it:
+If you are on this page, you most likely already know how to activate the lexer and use it.<br/>For a complete noob, this is how it is done:
 
 C#
 ```c#
@@ -82,6 +82,12 @@ End If
 ```
 
 For more information on XSHD files,  [see here](https://github.com/icsharpcode/SharpDevelop/wiki/Syntax-highlighting#attach-a-syntaxhighlighting-to-the-text-editor).
+
+Contact
+-------
+Your love letters &nbsp;&nbsp;&nbsp;> hello@exr.be
+<br/>
+Tweet me maybe?   > [0x141](https://twitter.com/0x141)
 
 Legal
 -----
