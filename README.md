@@ -17,8 +17,8 @@ List of all supported languages, sorted alphabetically:
 A            | B     | C            | D      | E      | F          | G       | H       | I       | J          | K       | L    | N       | O     | P          | R        | S        | T          | V           | X
 -------------|-------|--------------|--------|--------|------------|---------|---------|---------|------------|---------|------|---------|-------|------------|----------|----------|------------|-------------|----
 ActionScript | Batch | C#           | D      | Eiffel | F#         | Go      | Haskell | Icon    | Java       | KiXtart | Lean | Nemerle | Obj-C | ParaSail   | R        | Scala    | TCL        | Vala        | X10
-Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | Haxe    | ILYC    | JavaScript | Kotlin  | Lisp | Nim     | OCaml | Pascal     | Registry | Solidity | TypeScript | VB.NET      | XC
-ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | HTML    | INI/INF | JSON       |         | Lua  |         |       | PHP        | Resource | Spike    |            | VBScript    | XML
+Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | Haxe    | ILYC    | JavaScript | Kotlin  | Lisp | Nim     | OCaml | Pascal     | Registry | Solidity | Thrift     | VB.NET      | XC
+ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | HTML    | INI/INF | JSON       |         | Lua  |         |       | PHP        | Resource | Spike    | TypeScript | VBScript    | XML
 Assembly     |       | Ceylon       |        |        | Fortran95  |         |         |         | Julia      |         |      |         |       | Pike       | Rust     | SQF      |            | Verilog     | Xtend
 AutoHotkey   |       | ChucK        |        |        |            |         |         |         |            |         |      |         |       | PowerShell |          | SQL      |            | VHDL        |
              |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | Python     |          | Swift    |            | VS Solution |
@@ -27,7 +27,7 @@ AutoHotkey   |       | ChucK        |        |        |            |         |  
              |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
              |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
  
-That makes 78 languages in total.
+That makes 79 languages in total.
 
 > **Notes**
 
