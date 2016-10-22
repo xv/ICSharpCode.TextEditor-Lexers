@@ -33,7 +33,7 @@ https://github.com/ei
         <Property name="LineComment" value="'"/>
     </Properties>
     
-    <Digits name="Digits" color="Red"/>
+    <Digits name="Digits" color="Black"/>
     
     <RuleSets>
         <RuleSet ignorecase="true">
