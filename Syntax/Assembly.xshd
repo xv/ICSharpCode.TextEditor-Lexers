@@ -1005,19 +1005,19 @@ https://github.com/ei
             </KeyWords>
             
             <KeyWords name="Keywords6" color="Navy" bold="false" italic="false">
-                <Key word="PARA"/>
-                <Key word="MEDIUM"/>
-                <Key word="NOTHING"/>
-                <Key word="LARGE"/>
-                <Key word="FAR"/>
-                <Key word="FWORD"/>
-                <Key word="SMALL"/>
-                <Key word="DWORD"/>
-                <Key word="WORD"/>
-                <Key word="NEAR"/>
-                <Key word="TBYTE"/>
-                <Key word="QWORD"/>
-                <Key word="BYTE"/>
+                <Key word="byte"/>
+                <Key word="dword"/>
+                <Key word="far"/>
+                <Key word="fword"/>
+                <Key word="large"/>
+                <Key word="medium"/>
+                <Key word="near"/>
+                <Key word="nothing"/>
+                <Key word="para"/>
+                <Key word="qword"/>
+                <Key word="small"/>
+                <Key word="tbyte"/>
+                <Key word="word"/>
             </KeyWords>
         </RuleSet>
     </RuleSets>
