@@ -51,12 +51,12 @@ https://github.com/ei
                 <End>%endcomment</End>
             </Span>
             
-            <Span name="String" stopateol="true" color="#808080" bold="false" italic="false">
+            <Span name="String" stopateol="true" color="#808080" bold="false" italic="false" escapecharacter="\">
                 <Begin>"</Begin>
                 <End>"</End>
             </Span>
             
-            <Span name="Char" stopateol="true" color="#D50000" bold="false" italic="false">
+            <Span name="Char" stopateol="true" color="#D50000" bold="false" italic="false" escapecharacter="\">
                 <Begin>'</Begin>
                 <End>'</End>
             </Span>
