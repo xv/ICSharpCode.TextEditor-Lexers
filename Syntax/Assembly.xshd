@@ -260,6 +260,7 @@ https://github.com/ei
                 <Key word="smovw"/>
                 <Key word="rep"/>
                 <Key word="repe"/>
+                <Key word="repne"/>
                 <Key word="repnz"/>
                 <Key word="repz"/>
                 <Key word="scas"/>
