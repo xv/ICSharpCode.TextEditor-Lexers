@@ -1002,12 +1002,14 @@ https://github.com/ei
             </KeyWords>
             
             <KeyWords name="Keywords6" color="Navy" bold="false" italic="false">
+                <Key word="addr"/>
                 <Key word="byte"/>
                 <Key word="dword"/>
                 <Key word="far"/>
                 <Key word="fword"/>
                 <Key word="large"/>
                 <Key word="medium"/>
+                <Key word="memory"/>
                 <Key word="near"/>
                 <Key word="nothing"/>
                 <Key word="para"/>
