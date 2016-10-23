@@ -98,6 +98,8 @@ https://github.com/ei
                 <Key word="cmovs"/>
                 <Key word="cmovz"/>
                 <Key word="cmpxchg"/>
+                <Key word="cmpxchgb"/>
+                <Key word="cmpxchgl"/>
                 <Key word="cmpxchg8b"/>
                 <Key word="cqtd"/>
                 <Key word="cqto"/>
@@ -105,10 +107,16 @@ https://github.com/ei
                 <Key word="cwtl"/>
                 <Key word="mov"/>
                 <Key word="movabs"/>
+                <Key word="movl"/>
                 <Key word="movsb"/>
                 <Key word="movsw"/>
+                <Key word="movsx"/>
+                <Key word="movsxbl"/>
+                <Key word="movsxwl"/>
+                <Key word="movw"/>
                 <Key word="movzb"/>
                 <Key word="movzw"/>
+                <Key word="movzwl"/>
                 <Key word="movzx"/>
                 <Key word="pop"/>
                 <Key word="popl"/>
@@ -140,14 +148,26 @@ https://github.com/ei
                 <Key word="decw"/>
                 <Key word="decl"/>
                 <Key word="div"/>
+                <Key word="divb"/>
+                <Key word="divw"/>
+                <Key word="divl"/>
                 <Key word="idiv"/>
                 <Key word="imul"/>
+                <Key word="imulb"/>
+                <Key word="imulw"/>
+                <Key word="imull"/>
                 <Key word="inc"/>
                 <Key word="incb"/>
                 <Key word="incw"/>
                 <Key word="incl"/>
                 <Key word="mul"/>
+                <Key word="mulb"/>
+                <Key word="mulw"/>
+                <Key word="mull"/>
                 <Key word="neg"/>
+                <Key word="negb"/>
+                <Key word="negw"/>
+                <Key word="ngel"/>
                 <Key word="sbb"/>
                 <!-- Decimal Arithmetic Instructions -->
                 <Key word="aaa"/>
@@ -158,12 +178,28 @@ https://github.com/ei
                 <Key word="das"/>
                 <!-- Logical Instructions -->
                 <Key word="and"/>
+                <Key word="andb"/>
+                <Key word="andw"/>
+                <Key word="andl"/>
                 <Key word="not"/>
+                <Key word="notb"/>
+                <Key word="notw"/>
+                <Key word="notl"/>
                 <Key word="or"/>
+                <Key word="orb"/>
+                <Key word="orw"/>
+                <Key word="orl"/>
                 <Key word="xor"/>
+                <Key word="xorb"/>
+                <Key word="xorw"/>
+                <Key word="xorl"/>
                 <!-- Shift and Rotate Instructions -->
                 <Key word="rcl"/>
+                <Key word="rclb"/>
+                <Key word="rcll"/>
                 <Key word="rcr"/>
+                <Key word="rcrb"/>
+                <Key word="rcrl"/>
                 <Key word="rol"/>
                 <Key word="ror"/>
                 <Key word="sal"/>
@@ -184,8 +220,11 @@ https://github.com/ei
                 <Key word="bsr"/>
                 <Key word="bt"/>
                 <Key word="btc"/>
+                <Key word="btl"/>
                 <Key word="btr"/>
+                <Key word="btrl"/>
                 <Key word="bts"/>
+                <Key word="btsl"/>
                 <Key word="seta"/>
                 <Key word="setae"/>
                 <Key word="setb"/>
@@ -229,6 +268,8 @@ https://github.com/ei
                 <Key word="testl"/>
                 <!-- Control Transfer Instructions -->
                 <Key word="bound"/>
+                <Key word="boundw"/>
+                <Key word="boundl"/>
                 <Key word="call"/>
                 <Key word="enter"/>
                 <Key word="int"/>
@@ -268,6 +309,7 @@ https://github.com/ei
                 <Key word="jz"/>
                 <Key word="lcall"/>
                 <Key word="leave"/>
+                <Key word="ljmp"/>
                 <Key word="loop"/>
                 <Key word="loope"/>
                 <Key word="loopne"/>
@@ -458,6 +500,7 @@ https://github.com/ei
                 <Key word="finit"/>
                 <Key word="fldcw"/>
                 <Key word="fldenv"/>
+                <Key word="fldenvmem"/>
                 <Key word="fnclex"/>
                 <Key word="fninit"/>
                 <Key word="fnop"/>
