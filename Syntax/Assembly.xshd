@@ -233,6 +233,7 @@ https://github.com/ei
                 <Key word="setb"/>
                 <Key word="setbe"/>
                 <Key word="setc"/>
+                <Key word="setcc"/>
                 <Key word="sete"/>
                 <Key word="setg"/>
                 <Key word="setge"/>
@@ -265,6 +266,7 @@ https://github.com/ei
                 <Key word="sbbb"/>
                 <Key word="sbbw"/>
                 <Key word="sbbl"/>
+                <Key word="subp"/>
                 <Key word="test"/>
                 <Key word="testb"/>
                 <Key word="testw"/>
@@ -283,6 +285,7 @@ https://github.com/ei
                 <Key word="jb"/>
                 <Key word="jbe"/>
                 <Key word="jc"/>
+                <Key word="jcc"/>
                 <Key word="jcxz"/>
                 <Key word="je"/>
                 <Key word="jecxz"/>
@@ -391,6 +394,7 @@ https://github.com/ei
                 <Key word="clts"/>
                 <Key word="hlt"/>
                 <Key word="invd"/>
+                <Key word="invlp"/>
                 <Key word="invlpg"/>
                 <Key word="invlpgmem32"/>
                 <Key word="lar"/>
@@ -421,6 +425,7 @@ https://github.com/ei
             <KeyWords name="Keywords2" color="Sienna" bold="false" italic ="false">
                 <!-- Data Transfer Instructions (Floating Point) -->
                 <Key word="fbld"/>
+                <Key word="fbst"/>
                 <Key word="fbstp"/>
                 <Key word="fcmovb"/>
                 <Key word="fcmovbe"/>
@@ -452,6 +457,7 @@ https://github.com/ei
                 <Key word="fimul"/>
                 <Key word="fisub"/>
                 <Key word="fisubr"/>
+                <Key word="fisubrp"/>
                 <Key word="fmul"/>
                 <Key word="fmulp"/>
                 <Key word="fprem"/>
@@ -461,7 +467,7 @@ https://github.com/ei
                 <Key word="fsqrt"/>
                 <Key word="fsub"/>
                 <Key word="fsubp"/>
-                <Key word="fsubr"/>
+                <Key word="fsubr"/>          
                 <Key word="fsubrp"/>
                 <Key word="fxtract"/>
                 <!-- Comparison Instructions (Floating-Point) -->
@@ -878,6 +884,7 @@ https://github.com/ei
                 <Key word="%undef"/>
                 <Key word="%xdefine"/>
                 <Key word="%xidefine"/>
+                <Key word=".align"/>
                 <Key word=".alpha"/>
                 <Key word=".bcd"/>
                 <Key word=".break"/>
