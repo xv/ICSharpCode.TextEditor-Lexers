@@ -478,10 +478,10 @@ https://github.com/ei
                 <Key word="psubusw"/>
                 <Key word="psubw"/>
                 <!-- Comparison Instructions (MMX) -->
-                <Key word="pcmpeq"/>
+                <Key word="pcmpeqb"/>
                 <Key word="pcmpeqd"/>
                 <Key word="pcmpeqw"/>
-                <Key word="pcmpgt"/>
+                <Key word="pcmpgtb"/>
                 <Key word="pcmpgtd"/>
                 <Key word="pcmpgtw"/>
                 <!-- Logical Instructions (MMX) -->
