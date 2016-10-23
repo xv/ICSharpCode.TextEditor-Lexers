@@ -64,6 +64,7 @@ https://github.com/ei
             <KeyWords name="Keywords1" color="Blue" bold="false" italic="false">
                 <!-- Data Transfer Instructions -->
                 <Key word="bswap"/>
+                <Key word="bswapreg"/>
                 <Key word="cbtw"/>
                 <Key word="cltd"/>
                 <Key word="cltq"/>
@@ -128,8 +129,10 @@ https://github.com/ei
                 <Key word="pushal"/>
                 <Key word="pusha"/>
                 <Key word="xadd"/>
+                <Key word="xaddb"/>
                 <Key word="xchg"/>
-                <Key word="xchg"/>
+                <Key word="xchgb"/>
+                <Key word="xchgl"/>
                 <!-- Binary Arithmetic Instructions -->
                 <Key word="adc"/>
                 <Key word="adcb"/>
@@ -389,6 +392,7 @@ https://github.com/ei
                 <Key word="hlt"/>
                 <Key word="invd"/>
                 <Key word="invlpg"/>
+                <Key word="invlpgmem32"/>
                 <Key word="lar"/>
                 <Key word="lgdt"/>
                 <Key word="lidt"/>
@@ -881,15 +885,21 @@ https://github.com/ei
                 <Key word=".byte"/>
                 <Key word=".code"/>
                 <Key word=".comm"/>
+                <Key word=".comment"/>
                 <Key word=".const"/>
                 <Key word=".continue"/>
                 <Key word=".cref"/>
                 <Key word=".data"/>
+                <Key word=".data1"/>
                 <Key word=".data?"/>
+                <Key word=".debug"/>
                 <Key word=".def"/>
                 <Key word=".dim"/>
                 <Key word=".dosseg"/>
                 <Key word=".double"/>
+                <Key word=".dynamic"/>
+                <Key word=".dynsm"/>
+                <Key word=".dynstr"/>
                 <Key word=".else"/>
                 <Key word=".elseif"/>
                 <Key word=".endef"/>
@@ -913,10 +923,15 @@ https://github.com/ei
                 <Key word=".fardata"/>
                 <Key word=".fardata?"/>
                 <Key word=".file"/>
+                <Key word=".fini"/>
                 <Key word=".float"/>
                 <Key word=".globl"/>
+                <Key word=".got"/>
+                <Key word=".hash"/>
                 <Key word=".ident"/>
                 <Key word=".if"/>
+                <Key word=".init"/>
+                <Key word=".interp"/>
                 <Key word=".lall"/>
                 <Key word=".lcomm"/>
                 <Key word=".lfcond"/>
@@ -938,20 +953,28 @@ https://github.com/ei
                 <Key word=".nolistif"/>
                 <Key word=".nolistmacro"/>
                 <Key word=".nonvolatile"/>
+                <Key word=".note"/>
+                <Key word=".plt"/>
                 <Key word=".radix"/>
+                <Key word=".relaname"/>
                 <Key word=".repeat"/>
+                <Key word=".rodata"/>
+                <Key word=".rodata1"/>
                 <Key word=".sall"/>
                 <Key word=".scl"/>
                 <Key word=".section"/>
                 <Key word=".seq"/>
                 <Key word=".set"/>
                 <Key word=".sfcond"/>
+                <Key word=".shstrtab"/>
                 <Key word=".size"/>
                 <Key word=".stabn"/>
                 <Key word=".stabs"/>
                 <Key word=".stack"/>
                 <Key word=".startup"/>
                 <Key word=".string"/>
+                <Key word=".strtab"/>
+                <Key word=".symtab"/>
                 <Key word=".tag"/>
                 <Key word=".text"/>
                 <Key word=".tfcond"/>
@@ -1016,9 +1039,12 @@ https://github.com/ei
                 <Key word="extern"/>
                 <Key word="externdef"/>
                 <Key word="extrn"/>
+                <Key word="file"/>
                 <Key word="for"/>
                 <Key word="forc"/>
+                <Key word="fun"/>
                 <Key word="ge"/>
+                <Key word="global"/>
                 <Key word="global"/>
                 <Key word="goto"/>
                 <Key word="group"/>
@@ -1026,6 +1052,7 @@ https://github.com/ei
                 <Key word="height"/>
                 <Key word="high"/>
                 <Key word="highword"/>
+                <Key word="hiproc"/>
                 <Key word="iend"/>
                 <Key word="if"/>
                 <Key word="if1"/>
@@ -1053,6 +1080,8 @@ https://github.com/ei
                 <Key word="length"/>
                 <Key word="lengthof"/>
                 <Key word="local"/>
+                <Key word="local"/>
+                <Key word="loproc"/>
                 <Key word="low"/>
                 <Key word="lowword"/>
                 <Key word="lroffset"/>
@@ -1062,6 +1091,8 @@ https://github.com/ei
                 <Key word="mod"/>
                 <Key word="name"/>
                 <Key word="ne"/>
+                <Key word="notype"/>
+                <Key word="object"/>
                 <Key word="offset"/>
                 <Key word="opattr"/>
                 <Key word="option"/>
@@ -1091,7 +1122,6 @@ https://github.com/ei
                 <Key word="sizestr"/>
                 <Key word="struc"/>
                 <Key word="struct"/>
-                <Key word="struct"/>
                 <Key word="substr"/>
                 <Key word="subtitle"/>
                 <Key word="subttl"/>
@@ -1104,6 +1134,7 @@ https://github.com/ei
                 <Key word="union"/>
                 <Key word="use16"/>
                 <Key word="use32"/>
+                <Key word="weak"/>
                 <Key word="while"/>
                 <Key word="width"/>
             </KeyWords>
