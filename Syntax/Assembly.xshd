@@ -330,6 +330,7 @@ https://github.com/ei
                 <Key word="rsm"/>
                 <Key word="sgdt"/>
                 <Key word="sidt"/>
+                <Key word="sldt"/>
                 <Key word="smsw"/>
                 <Key word="str"/>
                 <Key word="sysenter"/>
