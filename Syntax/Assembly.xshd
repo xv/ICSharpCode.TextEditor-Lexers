@@ -334,10 +334,14 @@ https://github.com/ei
                 <Key word="loop"/>
                 <Key word="loopd"/>
                 <Key word="loope"/>
+                <Key word="loopew"/>
                 <Key word="loopne"/>
+                <Key word="loopnew"/>
                 <Key word="loopnz"/>
+                <Key word="loopnzw"/>
                 <Key word="loopw"/>
                 <Key word="loopz"/>
+                <Key word="loopzw"/>
                 <Key word="lret"/>
                 <Key word="ret"/>
                 <Key word="retf"/>
@@ -442,6 +446,8 @@ https://github.com/ei
                 <Key word="sidt"/>
                 <Key word="sldt"/>
                 <Key word="smi"/>
+                <Key word="smint"/>
+                <Key word="smintold"/>
                 <Key word="smsw"/>
                 <Key word="str"/>
                 <Key word="syscall"/>
@@ -530,6 +536,8 @@ https://github.com/ei
                 <Key word="fyl2xp1"/>
                 <!-- Load Constants (Floating-Point) Instructions -->
                 <Key word="fld1"/>
+                <Key word="fld2t"/>
+                <Key word="fldg2"/>
                 <Key word="fldl2e"/>
                 <Key word="fldl2t"/>
                 <Key word="fldlg2"/>
@@ -541,6 +549,7 @@ https://github.com/ei
                 <Key word="fdecstp"/>
                 <Key word="fdisi"/>
                 <Key word="ffree"/>
+                <Key word="ffreep"/>
                 <Key word="fincstp"/>
                 <Key word="finit"/>
                 <Key word="fldcw"/>
@@ -554,10 +563,12 @@ https://github.com/ei
                 <Key word="fninit"/>
                 <Key word="fnop"/>
                 <Key word="fnsave"/>
+                <Key word="fnsaved"/>
                 <Key word="fsaved"/>
                 <Key word="fnsavew"/>
                 <Key word="fnstcw"/>
                 <Key word="fnstenv"/>
+                <Key word="fnstenvd"/>
                 <Key word="fnstenvw"/>
                 <Key word="fnstsw"/>
                 <Key word="frstor"/>
@@ -641,6 +652,8 @@ https://github.com/ei
                 <Key word="pmagw"/>
                 <Key word="pmulhriw"/>
                 <Key word="pmulhrw"/>
+                <Key word="pmulhrwa"/>
+                <Key word="pmulhrwc"/>
                 <Key word="pmvgezb"/>
                 <Key word="pmvlzb"/>
                 <Key word="pmvnzb"/>
@@ -695,6 +708,7 @@ https://github.com/ei
                 <Key word="minss"/>
                 <Key word="mulps"/>
                 <Key word="mulss"/>
+                <Key word="paxsd"/>
                 <Key word="rcpps"/>
                 <Key word="rcpss"/>
                 <Key word="rsqrtps"/>
@@ -823,6 +837,7 @@ https://github.com/ei
                 <!-- SSE2 Miscellaneous Instructions -->
                 <Key word="clflush"/>
                 <Key word="lfence"/>
+                <Key word="maskmovdq"/>
                 <Key word="maskmovdqu"/>
                 <Key word="mfence"/>
                 <Key word="movntdq"/>
@@ -976,6 +991,19 @@ https://github.com/ei
                 <Key word="%undef"/>
                 <Key word="%xdefine"/>
                 <Key word="%xidefine"/>
+                <Key word=".186"/>
+                <Key word=".286"/>
+                <Key word=".286c"/>
+                <Key word=".286p"/>
+                <Key word=".287"/>
+                <Key word=".386"/>
+                <Key word=".386c"/>
+                <Key word=".386p"/>
+                <Key word=".387"/>
+                <Key word=".486"/>
+                <Key word=".486p"/>
+                <Key word=".8086"/>
+                <Key word=".8087"/>
                 <Key word=".align"/>
                 <Key word=".alpha"/>
                 <Key word=".bcd"/>
@@ -1067,6 +1095,7 @@ https://github.com/ei
                 <Key word=".sfcond"/>
                 <Key word=".shstrtab"/>
                 <Key word=".size"/>
+                <Key word=".space"/>
                 <Key word=".stabn"/>
                 <Key word=".stabs"/>
                 <Key word=".stack"/>
@@ -1198,6 +1227,7 @@ https://github.com/ei
                 <Key word="org"/>
                 <Key word="page"/>
                 <Key word="popcontext"/>
+                <Key word="private"/>
                 <Key word="proc"/>
                 <Key word="proto"/>
                 <Key word="ptr"/>
@@ -1240,19 +1270,37 @@ https://github.com/ei
             
             <KeyWords name="Keywords6" color="Navy" bold="false" italic="false">
                 <Key word="addr"/>
+                <Key word="basic"/>
                 <Key word="byte"/>
                 <Key word="dword"/>
+                <Key word="epilogue"/>
+                <Key word="expr16"/>
+                <Key word="expr32"/>
                 <Key word="far"/>
+                <Key word="far16"/>
+                <Key word="far32"/>
+                <Key word="forceframe"/>
                 <Key word="fword"/>
                 <Key word="large"/>
+                <Key word="loadds"/>
                 <Key word="medium"/>
                 <Key word="memory"/>
                 <Key word="near"/>
+                <Key word="near16"/>
+                <Key word="near32"/>
                 <Key word="nothing"/>
                 <Key word="para"/>
+                <Key word="prologue"/>
                 <Key word="qword"/>
+                <Key word="real10"/>
+                <Key word="real4"/>
+                <Key word="real8"/>
+                <Key word="sbyte"/>
+                <Key word="sdword"/>
                 <Key word="small"/>
+                <Key word="sword"/>
                 <Key word="tbyte"/>
+                <Key word="vararg"/>
                 <Key word="word"/>
             </KeyWords>
         </RuleSet>
