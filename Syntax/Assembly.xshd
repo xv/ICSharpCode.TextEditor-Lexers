@@ -74,6 +74,7 @@ https://github.com/ei
                 <Key word="cmovbe"/>
                 <Key word="cmovb"/>
                 <Key word="cmovc"/>
+                <Key word="cmovcc"/>
                 <Key word="cmove"/>
                 <Key word="cmovg"/>
                 <Key word="cmovge"/>
@@ -185,6 +186,12 @@ https://github.com/ei
                 <Key word="aas"/>
                 <Key word="daa"/>
                 <Key word="das"/>
+                <!-- Byte/Word/Doubleword/Quadword Conversion -->
+                <Key word="CBW"/>
+                <Key word="CDQ"/>
+                <Key word="CDQE"/>
+                <Key word="CWD"/>
+                <Key word="CWDE"/>
                 <!-- Logical Instructions -->
                 <Key word="and"/>
                 <Key word="andb"/>
@@ -325,9 +332,11 @@ https://github.com/ei
                 <Key word="leave"/>
                 <Key word="ljmp"/>
                 <Key word="loop"/>
+                <Key word="loopd"/>
                 <Key word="loope"/>
                 <Key word="loopne"/>
                 <Key word="loopnz"/>
+                <Key word="loopw"/>
                 <Key word="loopz"/>
                 <Key word="lret"/>
                 <Key word="ret"/>
@@ -419,6 +428,7 @@ https://github.com/ei
                 <Key word="lidt"/>
                 <Key word="lldt"/>
                 <Key word="lmsw"/>
+                <Key word="loadall"/>
                 <Key word="lock"/>
                 <Key word="lsl"/>
                 <Key word="ltr"/>
