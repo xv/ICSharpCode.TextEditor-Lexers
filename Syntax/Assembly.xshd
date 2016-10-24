@@ -123,11 +123,13 @@ https://github.com/ei
                 <Key word="movzwl"/>
                 <Key word="movzx"/>
                 <Key word="pop"/>
-                <Key word="popl"/>
-                <Key word="popaw"/>
-                <Key word="popal"/>
                 <Key word="popa"/>
+                <Key word="popad"/>
+                <Key word="popal"/>
+                <Key word="popaw"/>
+                <Key word="popl"/>
                 <Key word="push"/>
+                <Key word="pushad"/>
                 <Key word="pushaw"/>
                 <Key word="pushal"/>
                 <Key word="pusha"/>
@@ -210,6 +212,7 @@ https://github.com/ei
                 <Key word="rol"/>
                 <Key word="ror"/>
                 <Key word="sal"/>
+                <Key word="salc"/>
                 <Key word="sar"/>
                 <Key word="sarb"/>
                 <Key word="shl"/>
@@ -353,6 +356,7 @@ https://github.com/ei
                 <Key word="repz"/>
                 <Key word="scas"/>
                 <Key word="scasb"/>
+                <Key word="scasd"/>
                 <Key word="scasl"/>
                 <Key word="scasw"/>
                 <Key word="stos"/>
@@ -377,10 +381,12 @@ https://github.com/ei
                 <Key word="cli"/>
                 <Key word="cmc"/>
                 <Key word="lahf"/>
-                <Key word="popfw"/>
                 <Key word="popf"/>
-                <Key word="pushfw"/>
+                <Key word="popfd"/>
+                <Key word="popfw"/>
                 <Key word="pushf"/>
+                <Key word="pushfd"/>
+                <Key word="pushfw"/>
                 <Key word="sahf"/>
                 <Key word="stc"/>
                 <Key word="std"/>
@@ -424,6 +430,7 @@ https://github.com/ei
                 <Key word="sgdt"/>
                 <Key word="sidt"/>
                 <Key word="sldt"/>
+                <Key word="smi"/>
                 <Key word="smsw"/>
                 <Key word="str"/>
                 <Key word="syscall"/>
@@ -613,6 +620,28 @@ https://github.com/ei
                 <Key word="pmvnzb"/>
                 <Key word="pmvzb"/>
                 <Key word="psubsiw"/>
+                <!-- 3DNow! Instructions -->
+                <Key word="femms"/>
+                <Key word="pavgusb"/>
+                <Key word="pf2id"/>
+                <Key word="pfacc"/>
+                <Key word="pfadd"/>
+                <Key word="pfcmpeq"/>
+                <Key word="pfcmpge"/>
+                <Key word="pfcmpgt"/>
+                <Key word="pfmax"/>
+                <Key word="pfmin"/>
+                <Key word="pfmul"/>
+                <Key word="pfrcp"/>
+                <Key word="pfrcpit1"/>
+                <Key word="pfrcpit2"/>
+                <Key word="pfrsqit1"/>
+                <Key word="pfrsqrt"/>
+                <Key word="pfsub"/>
+                <Key word="pfsubr"/>
+                <Key word="pi2fd"/>
+                <Key word="prefetch"/>
+                <Key word="prefetchw"/>
                 <!-- Data Transfer Instructions (SSE) -->
                 <Key word="movaps"/>
                 <Key word="movhlps"/>
