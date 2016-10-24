@@ -72,6 +72,7 @@ https://github.com/ei
                 <Key word="cmov"/>
                 <Key word="cmovae"/>
                 <Key word="cmovbe"/>
+                <Key word="cmovb"/>
                 <Key word="cmovc"/>
                 <Key word="cmove"/>
                 <Key word="cmovg"/>
@@ -101,6 +102,7 @@ https://github.com/ei
                 <Key word="cmpxchg"/>
                 <Key word="cmpxchgb"/>
                 <Key word="cmpxchgl"/>
+                <Key word="cmpxchg486"/>
                 <Key word="cmpxchg8b"/>
                 <Key word="cqtd"/>
                 <Key word="cqto"/>
@@ -110,6 +112,7 @@ https://github.com/ei
                 <Key word="movabs"/>
                 <Key word="movl"/>
                 <Key word="movsb"/>
+                <Key word="movsd"/>
                 <Key word="movsw"/>
                 <Key word="movsx"/>
                 <Key word="movsxbl"/>
@@ -128,6 +131,7 @@ https://github.com/ei
                 <Key word="pushaw"/>
                 <Key word="pushal"/>
                 <Key word="pusha"/>
+                <Key word="pushw"/>
                 <Key word="xadd"/>
                 <Key word="xaddb"/>
                 <Key word="xchg"/>
@@ -294,6 +298,7 @@ https://github.com/ei
                 <Key word="jl"/>
                 <Key word="jle"/>
                 <Key word="jmp"/>
+                <Key word="jna"/>
                 <Key word="jnae"/>
                 <Key word="jnb"/>
                 <Key word="jnbe"/>
@@ -323,6 +328,8 @@ https://github.com/ei
                 <Key word="loopz"/>
                 <Key word="lret"/>
                 <Key word="ret"/>
+                <Key word="retf"/>
+                <Key word="retn"/>
                 <!-- String Instructions -->
                 <Key word="cmps"/>
                 <Key word="cmpsb"/>
@@ -330,6 +337,7 @@ https://github.com/ei
                 <Key word="cmpsw"/>
                 <Key word="lods"/>
                 <Key word="lodsb"/>
+                <Key word="lodsd"/>
                 <Key word="lodsl"/>
                 <Key word="lodsw"/>
                 <Key word="movs"/>
@@ -360,6 +368,7 @@ https://github.com/ei
                 <Key word="out"/>
                 <Key word="outs"/>
                 <Key word="outsb"/>
+                <Key word="outsd"/>
                 <Key word="outsl"/>
                 <Key word="outsw"/>
                 <!-- Flag Control (EFLAG) Instructions -->
@@ -386,6 +395,8 @@ https://github.com/ei
                 <Key word="cpuid"/>
                 <Key word="lea"/>
                 <Key word="nop"/>
+                <Key word="ud0"/>
+                <Key word="ud1"/>
                 <Key word="ud2"/>
                 <Key word="xlat"/>
                 <Key word="xlatb"/>
@@ -407,6 +418,7 @@ https://github.com/ei
                 <Key word="ltr"/>
                 <Key word="rdmsr"/>
                 <Key word="rdpmc"/>
+                <Key word="rdshr"/>
                 <Key word="rdtsc"/>
                 <Key word="rsm"/>
                 <Key word="sgdt"/>
@@ -414,12 +426,15 @@ https://github.com/ei
                 <Key word="sldt"/>
                 <Key word="smsw"/>
                 <Key word="str"/>
+                <Key word="syscall"/>
                 <Key word="sysenter"/>
                 <Key word="sysexit"/>
+                <Key word="sysret"/>
                 <Key word="verr"/>
                 <Key word="verw"/>
                 <Key word="wbinvd"/>
                 <Key word="wrmsr"/>
+                <Key word="wrshr"/>
             </KeyWords>
             
             <KeyWords name="Keywords2" color="Sienna" bold="false" italic ="false">
@@ -664,7 +679,6 @@ https://github.com/ei
                 <Key word="movhpd"/>
                 <Key word="movlpd"/>
                 <Key word="movmskpd"/>
-                <Key word="movsd"/>
                 <Key word="movupd"/>
                 <!-- SSE2 Packed Arithmetic Instructions -->
                 <Key word="addpd"/>
