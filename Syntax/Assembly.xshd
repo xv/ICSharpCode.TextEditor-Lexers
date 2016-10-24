@@ -624,6 +624,7 @@ https://github.com/ei
                 <Key word="femms"/>
                 <Key word="pavgusb"/>
                 <Key word="pf2id"/>
+                <Key word="pf2iw"/>
                 <Key word="pfacc"/>
                 <Key word="pfadd"/>
                 <Key word="pfcmpeq"/>
@@ -632,16 +633,22 @@ https://github.com/ei
                 <Key word="pfmax"/>
                 <Key word="pfmin"/>
                 <Key word="pfmul"/>
+                <Key word="pfnacc"/>
+                <Key word="pfpnacc"/>
                 <Key word="pfrcp"/>
                 <Key word="pfrcpit1"/>
                 <Key word="pfrcpit2"/>
+                <Key word="pfrcpv"/>
                 <Key word="pfrsqit1"/>
                 <Key word="pfrsqrt"/>
+                <Key word="pfrsqrtv"/>
                 <Key word="pfsub"/>
                 <Key word="pfsubr"/>
                 <Key word="pi2fd"/>
+                <Key word="pi2fw"/>
                 <Key word="prefetch"/>
                 <Key word="prefetchw"/>
+                <Key word="pswapd"/>
                 <!-- Data Transfer Instructions (SSE) -->
                 <Key word="movaps"/>
                 <Key word="movhlps"/>
