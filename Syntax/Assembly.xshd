@@ -1358,9 +1358,11 @@ https://github.com/ei
             </KeyWords>
             
             <KeyWords name="Keywords6" color="Navy" bold="false" italic="false">
+                <Key word="$"/>
                 <Key word="addr"/>
                 <Key word="basic"/>
                 <Key word="byte"/>
+                <Key word="c"/>
                 <Key word="casemap"/>
                 <Key word="dword"/>
                 <Key word="epilogue"/>
@@ -1371,6 +1373,7 @@ https://github.com/ei
                 <Key word="far32"/>
                 <Key word="flat"/>
                 <Key word="forceframe"/>
+                <Key word="fortran"/>
                 <Key word="fword"/>
                 <Key word="large"/>
                 <Key word="loadds"/>
@@ -1382,6 +1385,7 @@ https://github.com/ei
                 <Key word="none"/>
                 <Key word="nothing"/>
                 <Key word="para"/>
+                <Key word="pascal"/>
                 <Key word="prologue"/>
                 <Key word="qword"/>
                 <Key word="readonly"/>
