@@ -600,6 +600,19 @@ https://github.com/ei
                 <Key word="psrlw"/>
                 <!-- State Management Instructions (MMX) -->
                 <Key word="emms"/>
+                <!-- EMMX Instructions -->
+                <Key word="paddsiw"/>
+                <Key word="paveb"/>
+                <Key word="pdistib"/>
+                <Key word="pmachriw"/>
+                <Key word="pmagw"/>
+                <Key word="pmulhriw"/>
+                <Key word="pmulhrw"/>
+                <Key word="pmvgezb"/>
+                <Key word="pmvlzb"/>
+                <Key word="pmvnzb"/>
+                <Key word="pmvzb"/>
+                <Key word="psubsiw"/>
                 <!-- Data Transfer Instructions (SSE) -->
                 <Key word="movaps"/>
                 <Key word="movhlps"/>
