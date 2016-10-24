@@ -1397,6 +1397,49 @@ https://github.com/ei
                 <Key word="vararg"/>
                 <Key word="word"/>
             </KeyWords>
+            
+            <KeyWords name="Keywords7" color="DarkViolet" bold="false" italic="false">
+                <!-- MSP430 Mathematical Functions -->
+                <Key word="$acos"/>
+                <Key word="$asin"/>
+                <Key word="$atan"/>
+                <Key word="$atan2"/>
+                <Key word="$ceil"/>
+                <Key word="$cos"/>
+                <Key word="$cosh"/>
+                <Key word="$cvf"/>
+                <Key word="$cvi"/>
+                <Key word="$exp"/>
+                <Key word="$fabs"/>
+                <Key word="$floor"/>
+                <Key word="$fmod"/>
+                <Key word="$int"/>
+                <Key word="$ldexp"/>
+                <Key word="$log"/>
+                <Key word="$log10"/>
+                <Key word="$max"/>
+                <Key word="$min"/>
+                <Key word="$pow"/>
+                <Key word="$round"/>
+                <Key word="$sgn"/>
+                <Key word="$sin"/>
+                <Key word="$sinh"/>
+                <Key word="$sqrt"/>
+                <Key word="$strtod"/>
+                <Key word="$tan"/>
+                <Key word="$tanh"/>
+                <Key word="$trunc"/>
+                <!-- MSP430 Substitution Symbol Functions -->
+                <Key word="$symlen"/>
+                <Key word="$symcmp"/>
+                <Key word="$firstch"/>
+                <Key word="$lastch"/>
+                <Key word="$isdefed"/>
+                <Key word="$ismember"/>
+                <Key word="$iscons"/>
+                <Key word="$isname"/>
+                <Key word="$isreg"/>
+            </KeyWords>
         </RuleSet>
     </RuleSets>
 </SyntaxDefinition>
