@@ -56,16 +56,8 @@ https://github.com/ei
                 <End>"</End>
             </Span>
             
-            <MarkFollowing color="DarkViolet" bold="false" italic="false">@</MarkFollowing>
-            <MarkFollowing color="#BB179A" bold="false" italic="false">#</MarkFollowing>
-            
-            <KeyWords name="Punctuation1" color="#BB179A" bold="false">
-               <Key word="#"/>
-            </KeyWords>
-
-            <KeyWords name="Punctuation3" color="DarkViolet" bold="false">
-               <Key word="@"/>
-            </KeyWords>
+            <MarkFollowing markmarker="true" color="DarkViolet" bold="false" italic="false">@</MarkFollowing>
+            <MarkFollowing markmarker="true" color="#BB179A" bold="false" italic="false">#</MarkFollowing>
         </RuleSet>
    
     <RuleSet name="ValueRules" ignorecase="false">
