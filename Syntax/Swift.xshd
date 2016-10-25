@@ -56,11 +56,7 @@ https://github.com/ei
                 <End>"</End>
             </Span>
 
-            <MarkFollowing color="#82751A" bold="false">@</MarkFollowing>
-            
-            <KeyWords name="Punctuation" bold="false" color="#82751A">
-                <Key word="@"/>
-            </KeyWords>
+            <MarkFollowing markmarker="true" color="#82751A" bold="false">@</MarkFollowing>
 
             <KeyWords name="Keywords1" color="Blue" bold="false">
                 <Key word="Any"/>
