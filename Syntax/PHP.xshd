@@ -69,12 +69,12 @@ https://github.com/ei
                 <End>'</End>
             </Span>
             
-            <MarkFollowing color="#82751A" bold="false">$</MarkFollowing>
+            <MarkFollowing markmarker="true" color="#82751A" bold="false">$</MarkFollowing>
             <MarkFollowing color="Black" bold="false" italic="true">class</MarkFollowing>
             <MarkFollowing color="Purple" bold="true">trait</MarkFollowing>
             <MarkFollowing color="Purple" bold="true">interface</MarkFollowing>
             
-            <KeyWords name="Punctuation1" color="DarkGreen" bold="false">
+            <KeyWords name="Punctuation" color="DarkGreen" bold="false">
                 <Key word="?"/>
                 <Key word=","/>
                 <Key word="."/>
@@ -88,10 +88,6 @@ https://github.com/ei
                 <Key word="^"/>
                 <Key word="!"/>
                 <Key word="|"/>
-            </KeyWords>
-            
-            <KeyWords name="Punctuation2" color="#82751A" bold="false">
-                <Key word="$"/>
             </KeyWords>
             
             <KeyWords name="Header" color="Red" bold="false">
