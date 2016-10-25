@@ -56,32 +56,7 @@ https://github.com/ei
                 <End>"</End>
             </Span>
             
-            <MarkFollowing color="Sienna" bold="false" italic="false">#</MarkFollowing>
-            
-            <KeyWords name="Punctuation1" color="DarkBlue" bold="false" italic="false">
-                <Key word="~"/>
-                <Key word="-"/>
-                <Key word="="/>
-                <Key word="+"/>
-                <Key word="!"/>
-                <Key word="@"/>
-                <Key word="$"/>
-                <Key word="%"/>
-                <Key word="^"/>
-                <Key word="&amp;"/>
-                <Key word="*"/>
-                <Key word="&lt;"/>
-                <Key word="&gt;"/>
-                <Key word="|"/>
-                <Key word="\"/>
-                <Key word="/"/>
-                <Key word="."/>
-                <Key word=";"/>
-            </KeyWords>
-            
-            <KeyWords name="Punctuation2" color="Sienna" bold="false" italic="false">
-                <Key word="#"/>
-            </KeyWords>
+            <MarkFollowing markmarker="true" color="Sienna" bold="false" italic="false">#</MarkFollowing>
             
             <KeyWords name="Keywords1" color="Blue" bold="false" italic="false">
                 <Key word="_"/>
