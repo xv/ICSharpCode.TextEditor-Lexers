@@ -67,20 +67,6 @@
                 <Begin color="Green" bold="true" italic="true">(.</Begin>
                 <End color="Green" bold="true" italic="true">.)</End>
             </Span>
-                    
-            <KeyWords name="Punctuation" color="Black" bold="true" italic="false">
-                <Key word="{"/>
-                <Key word="}"/>
-                <Key word="("/>
-                <Key word=")"/>
-                <Key word="["/>
-                <Key word="]"/>
-                <Key word="|"/>
-                <Key word="+"/>
-                <Key word="-"/>
-                <Key word="="/>
-                <Key word="."/>
-            </KeyWords>
             
             <KeyWords name="KeyWords" color="Blue" bold="true" italic="false">
                 <Key word="ANY"/>
