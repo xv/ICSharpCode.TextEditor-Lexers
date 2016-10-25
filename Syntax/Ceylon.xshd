@@ -63,18 +63,9 @@ https://github.com/ei
             
             <MarkFollowing color="Black" bold="false" italic="true">class</MarkFollowing>
             <MarkFollowing color="Navy" bold="true" italic="false">import</MarkFollowing>
-            <MarkFollowing color="Green" bold="false" italic="false">@</MarkFollowing>
-            <MarkFollowing color="MidnightBlue" bold="false" italic="false">#</MarkFollowing>
-            <MarkFollowing color="MidnightBlue" bold="false" italic="false">$</MarkFollowing>
-            
-            <KeyWords name="Punctuation1" color="Green" bold="false" italic="false">
-                <Key word="@"/>
-            </KeyWords>
-            
-            <KeyWords name="Punctuation2" color="MidnightBlue" bold="false" italic="false">
-                <Key word="#"/>
-                <Key word="$"/>
-            </KeyWords>
+            <MarkFollowing markmarker="true" color="Green" bold="false" italic="false">@</MarkFollowing>
+            <MarkFollowing markmarker="true" color="MidnightBlue" bold="false" italic="false">#</MarkFollowing>
+            <MarkFollowing markmarker="true" color="MidnightBlue" bold="false" italic="false">$</MarkFollowing>
             
             <KeyWords name="Keywords1" color="Blue" bold="false" italic="false">
                 <Key word="abstracts"/>
