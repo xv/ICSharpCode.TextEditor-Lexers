@@ -34,7 +34,7 @@ https://github.com/ei
         <Property name="BlockCommentEnd" value="--&gt;"/>
     </Properties>
     
-    <Digits name="Digits" color="DarkBlue" bold="false" italic="false"/>
+    <Digits name="Digits" color="Black" bold="false" italic="false"/>
 
     <RuleSets>
         <RuleSet ignorecase="true">
@@ -44,17 +44,12 @@ https://github.com/ei
                 <Begin>&lt;!--</Begin>
                 <End>--&gt;</End>
             </Span>
-            
-            <Span name="ScriptTag1" rule="JavaScriptSet" stopateol="false" color="Black" bold="false" italic="false">
+           
+            <Span name="ScriptTag" rule="JavaScriptSet" stopateol="false" color="Black" bold="false" italic="false">
                 <Begin color="DarkMagenta">&lt;script&gt;</Begin>
                 <End color="DarkMagenta">&lt;/script&gt;</End>
             </Span>
-            
-            <Span name="ScriptTag2" rule="JavaScriptSet" stopateol="false" color="Black" bold="false" italic="false">
-                <Begin color="DarkMagenta">&lt;script@C</Begin>
-                <End color="DarkMagenta">&lt;/script&gt;</End>
-            </Span>
-            
+                   
             <Span name="HtmlTag" rule="HtmlTagSet" stopateol="false" color="DarkMagenta" bold="false" italic="false">
                 <Begin>&lt;</Begin>
                 <End>&gt;</End>
