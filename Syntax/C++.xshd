@@ -66,7 +66,7 @@ https://github.com/ei
                 <End>'</End>
             </Span>
             
-            <Span name="Preprocessor" stopateol="true" color="#804000" bold="false" italic="false">
+            <Span name="Preprocessor" stopateol="true" color="Sienna" bold="false" italic="false">
                 <Begin>#include</Begin>
             </Span>
             
@@ -334,7 +334,7 @@ https://github.com/ei
                 <Key word="true"/>
             </KeyWords>
             
-            <KeyWords name="Keywords4" color="#804000" bold="false" italic="false">
+            <KeyWords name="Keywords4" color="Sienna" bold="false" italic="false">
                 <Key word="#define"/>
                 <Key word="#defined"/>
                 <Key word="#elif"/>
