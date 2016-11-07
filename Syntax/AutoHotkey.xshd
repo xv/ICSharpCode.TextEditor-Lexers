@@ -51,7 +51,7 @@ https://github.com/ei
                 <End>*/</End>
             </Span>
                         
-            <Span name="String" stopateol="false" color="#808080" bold="false" italic="false" escapecharacter="\">
+            <Span name="String" stopateol="false" color="#808080" bold="false" italic="false">
                 <Begin>"</Begin>
                 <End>"</End>
             </Span>
