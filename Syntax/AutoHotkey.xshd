@@ -67,6 +67,7 @@ https://github.com/ei
                 <Key word="Exit"/>
                 <Key word="ExitApp"/>
                 <Key word="Extends"/>
+                <Key word="False"/>
                 <Key word="Finally"/>
                 <Key word="For"/>
                 <Key word="Global"/>
@@ -99,6 +100,7 @@ https://github.com/ei
                 <Key word="Return"/>
                 <Key word="Static"/>
                 <Key word="Throw"/>
+                <Key word="True"/>
                 <Key word="Try"/>
                 <Key word="Until"/>
                 <Key word="While"/>
