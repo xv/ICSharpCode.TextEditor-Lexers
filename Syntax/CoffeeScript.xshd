@@ -40,7 +40,7 @@ https://github.com/ei
     <RuleSets>
         <RuleSet ignorecase="false">
         
-            <Delimiters>()[]{},:.`#=;+-*@/%~ &amp;|^&gt;&lt;</Delimiters>
+            <Delimiters>()[]{},.`#=;+-*@/%~ &amp;|^&gt;&lt;</Delimiters>
             
             <Span name="MultiLineComment" stopateol="false" color="Green" bold="false" italic="false">
                 <Begin>###</Begin>
@@ -61,9 +61,7 @@ https://github.com/ei
                 <End>'</End>
             </Span>
             
-            <MarkPrevious color="#172687" bold="false">:</MarkPrevious>
-            <MarkPrevious color="#82751A" bold="false">=</MarkPrevious>
-            <MarkFollowing markmarker="true" color="Purple" bold="false">@</MarkFollowing>
+            <MarkFollowing markmarker="true" color="#82751A" bold="false">@</MarkFollowing>
             
             <KeyWords name="Keywords1" color="Blue" bold="false" italic="false">
                 <Key word="__bind"/>
