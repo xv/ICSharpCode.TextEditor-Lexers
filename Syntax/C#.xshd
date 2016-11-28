@@ -146,6 +146,7 @@ https://github.com/ei
                 <Key word="unchecked"/>
                 <Key word="unsafe"/>
                 <Key word="using"/>
+                <Key word="var"/>
                 <Key word="virtual"/>
                 <Key word="void"/>
                 <Key word="volatile"/>
@@ -154,7 +155,7 @@ https://github.com/ei
                 <Key word="yield"/>
             </KeyWords>
             
-            <KeyWords name="Keywords3" color="DarkViolet" bold="false" italic="false">
+            <KeyWords name="Keywords2" color="DarkViolet" bold="false" italic="false">
                 <Key word="bool"/>
                 <Key word="byte"/>
                 <Key word="char"/>
@@ -171,23 +172,6 @@ https://github.com/ei
                 <Key word="uint"/>
                 <Key word="ulong"/>
                 <Key word="ushort"/>
-            </KeyWords>
-            
-            <KeyWords name="Keywords3" color="Teal" bold="false" italic="false">
-                <Key word="ascending"/>
-                <Key word="by"/>
-                <Key word="descending"/>
-                <Key word="equals"/>
-                <Key word="from"/>
-                <Key word="group"/>
-                <Key word="into"/>
-                <Key word="join"/>
-                <Key word="let"/>
-                <Key word="on"/>
-                <Key word="orderby"/>
-                <Key word="select"/>
-                <Key word="var"/>
-                <Key word="where"/>
             </KeyWords>
         </RuleSet>
         
