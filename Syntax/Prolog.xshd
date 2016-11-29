@@ -308,6 +308,7 @@ https://github.com/ei
                 <Key word="is"/>
                 <Key word="is_absolute_file_name"/>
                 <Key word="is_list"/>
+                <Key word="is_ordset"/>
                 <Key word="is_set"/>
                 <Key word="is_stream"/>
                 <Key word="join_threads"/>
@@ -322,6 +323,7 @@ https://github.com/ei
                 <Key word="line_position"/>
                 <Key word="list_debug_topics"/>
                 <Key word="list_to_assoc"/>
+                <Key word="list_to_ord_set"/>
                 <Key word="list_to_set"/>
                 <Key word="listing"/>
                 <Key word="load_files"/>
@@ -396,7 +398,21 @@ https://github.com/ei
                 <Key word="open_null_stream"/>
                 <Key word="open_resource"/>
                 <Key word="open_shared_object"/>
+                <Key word="ord_add_element"/>
+                <Key word="ord_del_element"/>
+                <Key word="ord_disjoint"/>
+                <Key word="ord_empty"/>
+                <Key word="ord_intersect"/>
+                <Key word="ord_intersect"/>
+                <Key word="ord_intersection"/>
                 <Key word="ord_list_to_assoc"/>
+                <Key word="ord_memberchk"/>
+                <Key word="ord_selectchk"/>
+                <Key word="ord_seteq"/>
+                <Key word="ord_subset"/>
+                <Key word="ord_subtract"/>
+                <Key word="ord_symdiff"/>
+                <Key word="ord_union"/>
                 <Key word="pce_call"/>
                 <Key word="pce_dispatch"/>
                 <Key word="peek_byte"/>
