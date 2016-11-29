@@ -340,6 +340,7 @@ https://github.com/ei
                 <Key word="maplist"/>
                 <Key word="max"/>
                 <Key word="max_assoc"/>
+                <Key word="member"/>
                 <Key word="memberchk"/>
                 <Key word="merge"/>
                 <Key word="merge_set"/>
