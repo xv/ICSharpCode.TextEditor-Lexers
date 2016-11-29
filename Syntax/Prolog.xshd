@@ -230,6 +230,9 @@ https://github.com/ei
                 <Key word="discontiguous"/>
                 <Key word="display"/>
                 <Key word="div"/>
+                <Key word="doc_browser"/>
+                <Key word="doc_collect"/>
+                <Key word="doc_server"/>
                 <Key word="downcase_atom"/>
                 <Key word="dump"/>
                 <Key word="duplicate_term"/>
