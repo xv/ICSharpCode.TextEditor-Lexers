@@ -455,9 +455,13 @@ https://github.com/ei
                 <Key word="rational"/>
                 <Key word="read"/>
                 <Key word="read_clause"/>
+                <Key word="read_file_to_codes"/>
+                <Key word="read_file_to_terms"/>
                 <Key word="read_history"/>
+                <Key word="read_line_to_codes"/>
                 <Key word="read_link"/>
                 <Key word="read_pending_input"/>
+                <Key word="read_stream_to_codes"/>
                 <Key word="read_term"/>
                 <Key word="read_variables"/>
                 <Key word="recorda"/>
