@@ -510,6 +510,7 @@ https://github.com/ei
                 <Key word="popcount"/>
                 <Key word="portray"/>
                 <Key word="portray_clause"/>
+                <Key word="portray_text"/>
                 <Key word="powm"/>
                 <Key word="prase_url"/>
                 <Key word="prase_url_search"/>
@@ -621,6 +622,7 @@ https://github.com/ei
                 <Key word="set_feature"/>
                 <Key word="set_input"/>
                 <Key word="set_output"/>
+                <Key word="set_portray_text"/>
                 <Key word="set_prolog_IO"/>
                 <Key word="set_prolog_flag"/>
                 <Key word="set_prolog_stack"/>
