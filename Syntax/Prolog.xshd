@@ -562,6 +562,7 @@ https://github.com/ei
                 <Key word="thread_create"/>
                 <Key word="thread_detach"/>
                 <Key word="thread_exist"/>
+                <Key word="thread_exit"/>
                 <Key word="thread_get_message"/>
                 <Key word="thread_initialization"/>
                 <Key word="thread_join"/>
