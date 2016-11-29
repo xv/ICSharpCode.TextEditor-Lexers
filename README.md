@@ -21,13 +21,13 @@ Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | H
 ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | HTML    | INI/INF | JSON       |         | Lua  |         |       | PHP        | Resource | Spike    | TypeScript | VBScript    | XML
 Assembly     |       | Ceylon       |        |        | Fortran95  |         |         |         | Julia      |         |      |         |       | Pike       | Rust     | SQF      |            | Verilog     | Xtend
 AutoHotkey   |       | ChucK        |        |        |            |         |         |         |            |         |      |         |       | PowerShell |          | SQL      |            | VHDL        |
-             |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | PureScript |          | Swift    |            | VS Solution |
-             |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       | Python     |          |          |            |             |
-             |       | CoffeeScript |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
+             |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | Prolog     |          | Swift    |            | VS Solution |
+             |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       | PureScript |          |          |            |             |
+             |       | CoffeeScript |        |        |            |         |         |         |            |         |      |         |       | Python     |          |          |            |             |
              |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
              |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
  
-That makes 80 languages in total.
+That makes 81 languages in total.
 
 > **Notes**
 
