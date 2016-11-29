@@ -648,6 +648,14 @@ https://github.com/ei
                 <Key word="writeln"/>
                 <Key word="writeq"/>
                 <Key word="xor"/>
+                <Key word="xref_built_in"/>
+                <Key word="xref_called"/>
+                <Key word="xref_clean"/>
+                <Key word="xref_current_source"/>
+                <Key word="xref_defined"/>
+                <Key word="xref_exported"/>
+                <Key word="xref_module"/>
+                <Key word="xref_source"/>
             </KeyWords>
         </RuleSet>
     </RuleSets>
