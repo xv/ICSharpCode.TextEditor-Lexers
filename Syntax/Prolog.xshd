@@ -780,6 +780,7 @@ https://github.com/ei
                 <Key word="writeln"/>
                 <Key word="writeq"/>
                 <Key word="www_from_encode"/>
+                <Key word="www_open_url"/>
                 <Key word="xor"/>
                 <Key word="xref_built_in"/>
                 <Key word="xref_called"/>
