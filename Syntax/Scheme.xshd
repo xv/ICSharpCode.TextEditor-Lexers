@@ -55,9 +55,7 @@ https://github.com/ei
                 <Begin singleword="true">"</Begin>
                 <End>"</End>
             </Span>
-            
-            <MarkFollowing markmarker="true" color="Navy" bold="false" italic="true">'</MarkFollowing>
-                                    
+                                          
             <KeyWords name="Keywords1" color="Blue" bold="false">
                 <Key word="abs"/>
                 <Key word="acos"/>
@@ -72,7 +70,19 @@ https://github.com/ei
                 <Key word="atan"/>
                 <Key word="begin"/>
                 <Key word="boolean?"/>
+                <Key word="caaaar"/>
+                <Key word="caaadr"/>
+                <Key word="caaar"/>
+                <Key word="caadar"/>
+                <Key word="caaddr"/>
+                <Key word="caadr"/>
                 <Key word="caar"/>
+                <Key word="cadaar"/>
+                <Key word="cadadr"/>
+                <Key word="cadar"/>
+                <Key word="caddar"/>
+                <Key word="cadddr"/>
+                <Key word="caddr"/>
                 <Key word="cadr"/>
                 <Key word="call-with-current-continuation"/>
                 <Key word="call-with-input-file"/>
@@ -84,17 +94,33 @@ https://github.com/ei
                 <Key word="car"/>
                 <Key word="case"/>
                 <Key word="case-lambda"/>
+                <Key word="cdaaar"/>
+                <Key word="cdaadr"/>
+                <Key word="cdaar"/>
+                <Key word="cdadar"/>
+                <Key word="cdaddr"/>
+                <Key word="cdadr"/>
+                <Key word="cdar"/>
+                <Key word="cddaar"/>
+                <Key word="cddadr"/>
+                <Key word="cddar"/>
                 <Key word="cdddar"/>
                 <Key word="cddddr"/>
+                <Key word="cdddr"/>
+                <Key word="cddr"/>
                 <Key word="cdr"/>
                 <Key word="ceiling"/>
+                <Key word="char&gt;=?"/>
+                <Key word="char&gt;?"/>
+                <Key word="char&lt;=?"/>
+                <Key word="char&lt;?"/>
                 <Key word="char->integer"/>
                 <Key word="char-alphabetic?"/>
+                <Key word="char-ci&gt;=?"/>
+                <Key word="char-ci&gt;?"/>
                 <Key word="char-ci&lt;=?"/>
                 <Key word="char-ci&lt;?"/>
                 <Key word="char-ci=?"/>
-                <Key word="char-ci&gt;=?"/>
-                <Key word="char-ci&gt;?"/>
                 <Key word="char-downcase"/>
                 <Key word="char-lower-case?"/>
                 <Key word="char-numeric?"/>
@@ -102,11 +128,7 @@ https://github.com/ei
                 <Key word="char-upcase"/>
                 <Key word="char-upper-case?"/>
                 <Key word="char-whitespace?"/>
-                <Key word="char&lt;=?"/>
-                <Key word="char&lt;?"/>
                 <Key word="char=?"/>
-                <Key word="char&gt;=?"/>
-                <Key word="char&gt;?"/>
                 <Key word="char?"/>
                 <Key word="class"/>
                 <Key word="close-input-port"/>
@@ -231,25 +253,25 @@ https://github.com/ei
                 <Key word="sin"/>
                 <Key word="sqrt"/>
                 <Key word="string"/>
+                <Key word="string&gt;=?"/>
+                <Key word="string&gt;?"/>
+                <Key word="string&lt;=?"/>
+                <Key word="string&lt;?"/>
                 <Key word="string-&gt;list"/>
                 <Key word="string-&gt;number"/>
                 <Key word="string-&gt;symbol"/>
                 <Key word="string-append"/>
+                <Key word="string-ci&gt;=?"/>
+                <Key word="string-ci&gt;?"/>
                 <Key word="string-ci&lt;=?"/>
                 <Key word="string-ci&lt;?"/>
                 <Key word="string-ci=?"/>
-                <Key word="string-ci&gt;=?"/>
-                <Key word="string-ci&gt;?"/>
                 <Key word="string-copy"/>
                 <Key word="string-fill!"/>
                 <Key word="string-length"/>
                 <Key word="string-ref"/>
                 <Key word="string-set!"/>
-                <Key word="string&lt;=?"/>
-                <Key word="string&lt;?"/>
                 <Key word="string=?"/>
-                <Key word="string&gt;=?"/>
-                <Key word="string&gt;?"/>
                 <Key word="string?"/>
                 <Key word="substring"/>
                 <Key word="symbol->string"/>
