@@ -190,6 +190,7 @@ https://github.com/ei
                 <Key word="list"/>
                 <Key word="list->string"/>
                 <Key word="list->vector"/>
+                <Key word="list-head"/>
                 <Key word="list-ref"/>
                 <Key word="list-tail"/>
                 <Key word="list?"/>
