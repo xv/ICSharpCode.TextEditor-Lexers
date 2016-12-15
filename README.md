@@ -19,7 +19,7 @@ A            | B     | C            | D      | E      | F          | G       | H
 ActionScript | Batch | C#           | D      | Eiffel | F#         | Go      | Haskell | Icon    | Java       | KiXtart | Lean | Nemerle | Obj-C | ParaSail   | R        | Scala    | TCL        | Vala        | X10
 Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | Haxe    | ILYC    | JavaScript | Kotlin  | Lisp | Nim     | OCaml | Pascal     | Registry | Scheme   | Thrift     | VB.NET      | XC
 ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | HTML    | INI/INF | JSON       |         | Lua  |         |       | PHP        | Resource | Solidity | TypeScript | VBScript    | XML
-Assembly     |       | Ceylon       |        |        | Fortran95  |         |         |         | Julia      |         |      |         |       | Pike       | Rexx     | Spike    |            | Verilog     | Xtend
+Assembly     |       | Ceylon       |        |        | Fortran95  |         |         | Io      | Julia      |         |      |         |       | Pike       | Rexx     | Spike    |            | Verilog     | Xtend
 AutoHotkey   |       | ChucK        |        |        |            |         |         |         |            |         |      |         |       | PowerShell | Rust     | SQF      |            | VHDL        |
              |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | Prolog     |          | SQL      |            | VS Solution |
              |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       | PureScript |          | Swift    |            |             |
@@ -27,7 +27,7 @@ AutoHotkey   |       | ChucK        |        |        |            |         |  
              |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
              |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
  
-That makes 83 languages in total.
+That makes 84 languages in total.
 
 > **Notes**
 
