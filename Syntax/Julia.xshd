@@ -51,7 +51,12 @@ https://github.com/ei
                 <Begin>#</Begin>
             </Span>
             
-            <Span name="String" stopateol="false" color="#808080" bold="false" italic="false" escapecharacter="\">
+            <Span name="String1" stopateol="false" color="#808080" bold="false" italic="false">
+                <Begin>"""</Begin>
+                <End>"""</End>
+            </Span>
+            
+            <Span name="String2" stopateol="false" color="#808080" bold="false" italic="false" escapecharacter="\">
                 <Begin>"</Begin>
                 <End>"</End>
             </Span>
