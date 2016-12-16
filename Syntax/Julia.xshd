@@ -42,7 +42,7 @@ https://github.com/ei
                         
             <Delimiters>()[]{}#@!,.`'=:;+-*/%~ &amp;|^&gt;&lt;</Delimiters>
             
-            <Span name="MultiLineComment" stopateol="false" color="Green">
+            <Span name="BlockComment" rule="CommentSet1" stopateol="false" color="Green">
                 <Begin>#=</Begin>
                 <End>=#</End>
             </Span>
@@ -279,6 +279,15 @@ https://github.com/ei
                 <Key word="WeakRef"/>
                 <Key word="Zip"/>
             </KeyWords>
+        </RuleSet>
+        
+        <RuleSet ignorecase="false" name="CommentSet1">
+            <Delimiters>&amp;&lt;&gt;~!@%^*()-+=|\#/{}[]:;"' ,  .?</Delimiters>
+
+            <Span name="BlockComment" stopateol="false" color="Green" bold="false" italic="false">
+                <Begin >#=</Begin>
+                <End >=#</End>
+            </Span>
         </RuleSet>
     </RuleSets>
 </SyntaxDefinition>
