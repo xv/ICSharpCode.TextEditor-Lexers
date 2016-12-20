@@ -40,8 +40,8 @@ If you are on this page, you most likely already know how to activate the lexer 
 
 C#
 ```c#
-using ICSharpCode.TextEditor.Document;
 using System.IO;
+using ICSharpCode.TextEditor.Document;
 ```
 ```c#
 // insert the directory path of the desired .xshd file
@@ -65,12 +65,14 @@ else
 
 VB.NET
 ```vb.net
-Imports ICSharpCode.TextEditor.Document
 Imports System.IO
+Imports ICSharpCode.TextEditor.Document
 ```
 ```vb.net
-Dim synDir As String = "resources\highlighting" ' insert the directory path of the desired .xshd file
-Dim fsmProvider As FileSyntaxModeProvider       ' syntax provider
+' insert the directory path of the desired .xshd file
+Dim synDir As String = Application.StartupPath & "\Syntax"
+' syntax provider
+Dim fsmProvider As FileSyntaxModeProvider
 
 If Directory.Exists(synDir) Then
 	' create new provider with the highlighting directory
@@ -80,7 +82,7 @@ If Directory.Exists(synDir) Then
 	' activate the highlighting, use the name from the SyntaxDefinition node in the .xshd file
 	TextEditorControl.SetHighlighting("YourHighlighting")
 Else
-	MessageBox.Show("Directory not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+	MessageBox.Show(ChrW(39) + synDir + ChrW(39) + "doesn't exist")
 End If
 ```
 
