@@ -45,8 +45,9 @@ using System.IO;
 ```
 ```c#
 // insert the directory path of the desired .xshd file
-var synDir = @"resources\highlighting\\";
+var synDir = Application.StartupPath + "\\Syntax";
 
+// Check if directory exists to prevent throwing an exception
 if (Directory.Exists(synDir))
 {
     // create new provider with the highlighting directory
@@ -58,7 +59,7 @@ if (Directory.Exists(synDir))
 }
 else
 {
-    MessageBox.Show("Directory not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+    MessageBox.Show("\u0027" + synDir + "\u0027" + " doesn't exist");
 }
 ```
 
