@@ -3,8 +3,8 @@
 <!-- 
 Objective-C syntax highlighting
 Written by Ezra Altahan
-Created 20/01/2014 | Updated 16/10/2016
-Version 1.1
+Created 20/01/2014 | Updated 20/11/2016
+Version 1.2
 
 hello@exr.be
 https://github.com/ei
@@ -224,7 +224,6 @@ https://github.com/ei
                 <Key word="@return"/>
                 <Key word="@see"/>
                 <Key word="@verbatim"/>
-                <Key word="@warning"/>
                 <Key word="@warning"/>
             </KeyWords>
         </RuleSet>
