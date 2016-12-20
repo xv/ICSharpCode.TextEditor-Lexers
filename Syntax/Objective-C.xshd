@@ -221,6 +221,7 @@ https://github.com/ei
             <KeyWords name="Keywords1" color="DimGray" bold="false" italic="false">
                 <Key word="@exception"/>
                 <Key word="@param"/>
+                <Key word="@result"/>
                 <Key word="@return"/>
                 <Key word="@see"/>
                 <Key word="@verbatim"/>
