@@ -35,7 +35,7 @@ https://github.com/ei
         <Property name="BlockCommentEnd" value="*/"/>
     </Properties>
         
-    <Digits name="Digits" color="Red"/>
+    <Digits name="Digits" color="#CC3A4A"/>
 
     <RuleSets>
         <RuleSet ignorecase="false">
@@ -45,8 +45,13 @@ https://github.com/ei
             <Span name="LineComment" stopateol="true" color="Green" bold="false" italic="false">
                 <Begin>//</Begin>
             </Span>
+            
+            <Span name="BlockComment1" rule="Doxygen" stopateol="false" color="Teal" bold="false" italic="false">
+                <Begin>/**</Begin>
+                <End>*/</End>
+            </Span>
                         
-            <Span name="BlockComment" stopateol="false" color="Green" bold="false" italic="false">
+            <Span name="BlockComment2" stopateol="false" color="Green" bold="false" italic="false">
                 <Begin>/*</Begin>
                 <End>*/</End>
             </Span>
@@ -207,6 +212,20 @@ https://github.com/ei
                 <Key word="@synthesize"/>
                 <Key word="@throw"/>
                 <Key word="@try"/>
+            </KeyWords>
+        </RuleSet>
+        
+        <RuleSet name="Doxygen" ignorecase="false">
+            <Delimiters>~!%^*()+=|\#/{}[];"'&lt;&gt; , .?</Delimiters>
+            
+            <KeyWords name="Keywords1" color="DimGray" bold="false" italic="false">
+                <Key word="@exception"/>
+                <Key word="@param"/>
+                <Key word="@return"/>
+                <Key word="@see"/>
+                <Key word="@verbatim"/>
+                <Key word="@warning"/>
+                <Key word="@warning"/>
             </KeyWords>
         </RuleSet>
     </RuleSets>
