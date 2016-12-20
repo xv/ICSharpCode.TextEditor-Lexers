@@ -42,8 +42,12 @@ https://github.com/ei
         
             <Delimiters>&amp;&lt;&gt;~!@%^*()-+=|\#/{}[]:;"' ,  .?</Delimiters>
             
-            <Span name="LineComment" stopateol="true" color="Green" bold="false" italic="false">
+            <Span name="LineComment1" stopateol="true" color="Green" bold="false" italic="false">
                 <Begin>--</Begin>
+            </Span>
+            
+            <Span name="LineComment2" stopateol="true" color="Green" bold="false" italic="false">
+                <Begin>#</Begin>
             </Span>
             
             <Span name="BlockComment" stopateol="false" color="Green" bold="false" italic="false">
