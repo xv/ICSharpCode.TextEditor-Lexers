@@ -47,7 +47,7 @@ using ICSharpCode.TextEditor.Document;
 // insert the directory path of the desired .xshd file
 var synDir = Application.StartupPath + "\\Syntax";
 
-// Check if directory exists to prevent throwing an exception
+// check if directory exists to prevent throwing an exception
 if (Directory.Exists(synDir))
 {
     // create new provider with the highlighting directory
@@ -57,10 +57,7 @@ if (Directory.Exists(synDir))
     // activate the highlighting, use the name from the SyntaxDefinition node in the .xshd file
     TextEditorControl.SetHighlighting("YourHighlighting");
 }
-else
-{
-    MessageBox.Show("\u0027" + synDir + "\u0027" + " doesn't exist");
-}
+else { MessageBox.Show("\u0027" + synDir + "\u0027" + " doesn't exist"); }
 ```
 
 VB.NET
