@@ -44,19 +44,21 @@ using ICSharpCode.TextEditor.Document;
 using System.IO;
 ```
 ```c#
-string synDir = @"resources\highlighting\\"; // insert the directory path of the desired .xshd file
-FileSyntaxModeProvider fsmProvider;          // syntax provider
+// insert the directory path of the desired .xshd file
+var synDir = @"resources\highlighting\\";
 
 if (Directory.Exists(synDir))
 {
     // create new provider with the highlighting directory
-    fsmProvider = new FileSyntaxModeProvider(synDir);
+    var fsmProvider = new FileSyntaxModeProvider(synDir);
     // attach to the text editor
     HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmProvider);
     // activate the highlighting, use the name from the SyntaxDefinition node in the .xshd file
     TextEditorControl.SetHighlighting("YourHighlighting");
-} else {
-	MessageBox.Show("Directory not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+}
+else
+{
+    MessageBox.Show("Directory not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 }
 ```
 
