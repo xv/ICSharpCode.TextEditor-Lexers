@@ -22,12 +22,12 @@ ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | H
 Assembly     |       | Ceylon       |        |        | Fortran95  |         |         | Io      | Julia      |         |      |         |       | Pike       | Rexx     | Spike    |            | Verilog     | Xtend
 AutoHotkey   |       | ChucK        |        |        |            |         |         |         |            |         |      |         |       | PowerShell | Rust     | SQF      |            | VHDL        |
              |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | Prolog     |          | SQL      |            | VS Solution |
-             |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       | PureScript |          | Swift    |            |             |
+             |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       | PureScript |          | Swift    |            | Volt        |
              |       | CoffeeScript |        |        |            |         |         |         |            |         |      |         |       | Python     |          |          |            |             |
              |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
              |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
  
-That makes 84 languages in total.
+That makes 85 languages in total.
 
 > **Notes**
 
