@@ -3,7 +3,7 @@
 <!-- 
 C++ syntax highlighting
 Written by Ezra Altahan
-Created 03/05/2011 | Updated 16/10/2016
+Created 03/05/2011 | Updated 30/12/2016
 Version 1.2
 
 hello@exr.be
@@ -73,7 +73,7 @@ https://github.com/ei
             <MarkFollowing color="Black" bold="false" italic="true">class</MarkFollowing>
             
             <KeyWords name="Keywords1" color="Blue" bold="false" italic="false">
-                <Key word="_Pragma"/>
+                <Key word="NULL"/>
                 <Key word="alignof"/>
                 <Key word="and"/>
                 <Key word="and_eq"/>
@@ -92,6 +92,7 @@ https://github.com/ei
                 <Key word="do"/>
                 <Key word="dynamic_cast"/>
                 <Key word="else"/>
+                <Key word="false"/>
                 <Key word="for"/>
                 <Key word="goto"/>
                 <Key word="if"/>
@@ -111,6 +112,7 @@ https://github.com/ei
                 <Key word="switch"/>
                 <Key word="this"/>
                 <Key word="throw"/>
+                <Key word="true"/>
                 <Key word="try"/>
                 <Key word="typedef"/>
                 <Key word="typeid"/>
@@ -326,15 +328,7 @@ https://github.com/ei
                 <Key word="wchar_t"/>
             </KeyWords>
             
-            <KeyWords name="Keywords3" color="Red" bold="false" italic="false">
-                <Key word="FALSE"/>
-                <Key word="NULL"/>
-                <Key word="TRUE"/>
-                <Key word="false"/>
-                <Key word="true"/>
-            </KeyWords>
-            
-            <KeyWords name="Keywords4" color="Sienna" bold="false" italic="false">
+            <KeyWords name="Keywords3" color="Sienna" bold="false" italic="false">
                 <Key word="#define"/>
                 <Key word="#defined"/>
                 <Key word="#elif"/>
@@ -348,7 +342,7 @@ https://github.com/ei
                 <Key word="#undef"/>
             </KeyWords>
             
-            <KeyWords name="Keywords5" color="Teal" bold="false" italic="false">
+            <KeyWords name="Keywords4" color="Teal" bold="false" italic="false">
                 <Key word="__abstract"/>
                 <Key word="__asm"/>
                 <Key word="__based"/>
