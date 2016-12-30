@@ -3,14 +3,14 @@
 <!-- 
 C++ syntax highlighting
 Written by Ezra Altahan
-Created 03/05/2011 | Updated 30/12/2016
-Version 1.2
+Created 03/05/2011 Updated 30/12/2016
+Version 1.3
 
 hello@exr.be
 https://github.com/ei
 -->
 
-<SyntaxDefinition name="C++" extensions=".c;.h;.cc;.C;.cpp;.hpp;.sqm;.ext">
+<SyntaxDefinition name="C++" extensions=".c;.h;.cc;.C;.cpp;.cxx;.hpp">
 
     <Environment> 
         <Default color="Black" bgcolor="#FFFFFF"/>
@@ -123,84 +123,6 @@ https://github.com/ei
             </KeyWords>
             
             <KeyWords name="Keywords2" color="DarkViolet" bold="false" italic="false">
-                <Key word="AbsoluteTime"/>
-                <Key word="Boolean"/>
-                <Key word="Byte"/>
-                <Key word="ByteCount"/>
-                <Key word="ByteOffset"/>
-                <Key word="BytePtr"/>
-                <Key word="CompTimeValue"/>
-                <Key word="ConstLogicalAddress"/>
-                <Key word="ConstStrFileNameParam"/>
-                <Key word="ConstStringPtr"/>
-                <Key word="Duration"/>
-                <Key word="FILE"/>
-                <Key word="Fixed"/>
-                <Key word="FixedPtr"/>
-                <Key word="Float32"/>
-                <Key word="Float32Point"/>
-                <Key word="Float64"/>
-                <Key word="Float80"/>
-                <Key word="Float96"/>
-                <Key word="FourCharCode"/>
-                <Key word="Fract"/>
-                <Key word="FractPtr"/>
-                <Key word="Handle"/>
-                <Key word="ItemCount"/>
-                <Key word="LogicalAddress"/>
-                <Key word="OSErr"/>
-                <Key word="OSStatus"/>
-                <Key word="OSType"/>
-                <Key word="OSTypePtr"/>
-                <Key word="OptionBits"/>
-                <Key word="PhysicalAddress"/>
-                <Key word="ProcHandle"/>
-                <Key word="ProcessSerialNumber"/>
-                <Key word="ProcessSerialNumberPtr"/>
-                <Key word="Ptr"/>
-                <Key word="ResType"/>
-                <Key word="ResTypePtr"/>
-                <Key word="SInt16"/>
-                <Key word="SInt32"/>
-                <Key word="SInt64"/>
-                <Key word="SInt8"/>
-                <Key word="ShortFixed"/>
-                <Key word="ShortFixedPtr"/>
-                <Key word="SignedByte"/>
-                <Key word="Size"/>
-                <Key word="StrFileName"/>
-                <Key word="StringHandle"/>
-                <Key word="StringPtr"/>
-                <Key word="TimeBase"/>
-                <Key word="TimeRecord"/>
-                <Key word="TimeScale"/>
-                <Key word="TimeValue"/>
-                <Key word="TimeValue64"/>
-                <Key word="UInt16"/>
-                <Key word="UInt32"/>
-                <Key word="UInt64"/>
-                <Key word="UInt8"/>
-                <Key word="UTF16Char"/>
-                <Key word="UTF32Char"/>
-                <Key word="UTF8Char"/>
-                <Key word="UniChar"/>
-                <Key word="UniCharCount"/>
-                <Key word="UniCharCountPtr"/>
-                <Key word="UniCharPtr"/>
-                <Key word="UnicodeScalarValue"/>
-                <Key word="UniversalProcHandle"/>
-                <Key word="UniversalProcPtr"/>
-                <Key word="UnsignedFixed"/>
-                <Key word="UnsignedFixedPtr"/>
-                <Key word="UnsignedWide"/>
-                <Key word="_Bool"/>
-                <Key word="_Complex"/>
-                <Key word="_Imaginary"/>
-                <Key word="__asm__"/>
-                <Key word="__int16"/>
-                <Key word="__int32"/>
-                <Key word="__int64"/>
-                <Key word="__int8"/>
                 <Key word="alignas"/>
                 <Key word="asm"/>
                 <Key word="auto"/>
@@ -340,53 +262,6 @@ https://github.com/ei
                 <Key word="#line"/>
                 <Key word="#pragma"/>
                 <Key word="#undef"/>
-            </KeyWords>
-            
-            <KeyWords name="Keywords4" color="Teal" bold="false" italic="false">
-                <Key word="__abstract"/>
-                <Key word="__asm"/>
-                <Key word="__based"/>
-                <Key word="__box"/>
-                <Key word="__cdecl"/>
-                <Key word="__cplusplus"/>
-                <Key word="__declspec"/>
-                <Key word="__delegate"/>
-                <Key word="__emit"/>
-                <Key word="__event"/>
-                <Key word="__except"/>
-                <Key word="__export"/>
-                <Key word="__far"/>
-                <Key word="__fastcall"/>
-                <Key word="__finally"/>
-                <Key word="__forceinline"/>
-                <Key word="__fortran"/>
-                <Key word="__gc"/>
-                <Key word="__hook"/>
-                <Key word="__huge"/>
-                <Key word="__identifier"/>
-                <Key word="__inline"/>
-                <Key word="__interface"/>
-                <Key word="__interrupt"/>
-                <Key word="__leave"/>
-                <Key word="__loadds"/>
-                <Key word="__near"/>
-                <Key word="__nogc"/>
-                <Key word="__pascal"/>
-                <Key word="__pin"/>
-                <Key word="__property"/>
-                <Key word="__raise"/>
-                <Key word="__saveregs"/>
-                <Key word="__sealed"/>
-                <Key word="__segment"/>
-                <Key word="__segname"/>
-                <Key word="__self"/>
-                <Key word="__stdcall"/>
-                <Key word="__syscall"/>
-                <Key word="__try"/>
-                <Key word="__try_cast"/>
-                <Key word="__typeof"/>
-                <Key word="__unhook"/>
-                <Key word="__value"/>
             </KeyWords>
         </RuleSet>
         
