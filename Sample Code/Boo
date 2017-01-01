@@ -1,0 +1,30 @@
+/* Simple test class
+** I have no idea where I got this from. Author can contact me.
+*/
+
+namespace Winterdom.Boo.Test
+import System
+
+class BooTest:
+    event Done as DoneHandler
+    callable DoneHandler(sender as object, e as EventArgs)
+    def Run(args as (string)):
+        assert args != null
+        try:
+            for s in args:
+                # print if matches pattern
+                if s =~ /u.+/:
+                    print "This is a string: ${s} of length ${s.length}"
+        except e:
+            print "An exception occurred: ${e}"
+        if Done != null:
+            Done(self, EventArgs.Empty)
+        return 0
+        
+    static def OnDone(sender as object, e as EventArgs):
+        print "we're done here!"
+        
+// start of the program
+obj = BooTest()
+obj.Done += BooTest.OnDone
+obj.Run(("uno", "dos", "tres"))
