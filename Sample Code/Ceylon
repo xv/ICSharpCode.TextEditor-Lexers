@@ -22,7 +22,7 @@ interface Body {
 
 "The sun."
 class Sun(x, y, r, String color) 
-		satisfies Body {
+        satisfies Body {
     
     shared actual Float x;
     shared actual Float y;
@@ -43,7 +43,7 @@ class Sun(x, y, r, String color)
 "A planet or moon."
 class Planet(name, primary, r, Float v, String color = "#FFF", 
              rp = 0.0, String? ringColor = null) 
-		satisfies Body {
+        satisfies Body {
     
     shared String name;
     shared Body primary;
@@ -56,7 +56,7 @@ class Planet(name, primary, r, Float v, String color = "#FFF",
     shared actual variable Float y = primary.y - rp - (r + primary.r);
     
     variable Float radian = pi/2;
-	
+    
     orbit = () {
         radian += v / 360.0 * pi;
         x = primary.x - sin(radian) * (primary.r + rp);
