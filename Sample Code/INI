@@ -1,0 +1,9 @@
+; Do not delete this file
+
+[Section-1]
+BooleanVal=False
+IntegerVal=2423
+
+[Section-2]
+BooleanVal=True
+IntegerVal=145
