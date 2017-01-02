@@ -1,0 +1,44 @@
+// Table pages
+object AccTable from Table( [ "name" , "rate_act" , "rate_pasv" ] )
+ 
+  init 
+      // in year 2007 
+      self.insertPage( nil , .[ 
+          .[  'basic'     2.3  8.4  ] 
+          .[  'business'  0.8  4.2  ] 
+          .[  'premium'   3.2  5.3  ] 
+          ] )
+ 
+      // in year 2008 
+      self.insertPage( nil , .[ 
+          .[  'basic'     3.2  7.6  ] 
+          .[  'business'  1.1  4.5  ] 
+          .[  'premium'   3.4  5.2  ] 
+          ] )
+    end 
+ 
+    // set the current year 
+    function setYear( year )
+      if year < 2008 
+          self.setPage( 1 )
+      else 
+          self.setPage( 2 )
+      end 
+    end 
+ 
+    // get rates 
+    function activeRate( acct, amount )
+      return amount + ( self.find( 'name' , acct ).rate_act / 100.0 * amount)
+    end 
+end 
+ 
+// A bit of calcs. 
+ 
+// what should a premium account get for 1000$ on 2007? 
+AccTable . setYear( 2007 )
+> "Premium account with 1000$ on 2007 was worth: " , \
+   AccTable.activeRate( 'premium' , 1000 )
+ 
+AccTable . setYear( 2008 )
+> "Premium account with 1000$ on 2008 was worth: " , \
+   AccTable.activeRate( 'premium' , 1000 )
