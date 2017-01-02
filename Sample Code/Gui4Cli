@@ -1,0 +1,45 @@
+// How a Gui4Cli program is structured
+// http://gui4cli.com/html/manual/ProgramStructure.htm
+
+G4C DirView
+
+WINDOW 168 13 510 471 "Your Computer"
+   WinAttr Style resize
+
+xOnLoad
+   GuiOpen #this
+
+xOnClose
+    guiquit #this
+
+XLISTVIEW 185 0 323 472 "" "#disks" lvar1
+   attr ID lv1
+   attr frame sunk
+   attr Style Grid/Drag/Drop/parent/disk
+   Attr resize 0022
+   if $lvar1 > ''
+      run $lvar1
+   endif
+
+xOnLVDir lv1 // happens wherever LV changes dir
+    gosub #this ChangeDir // change window title
+    use tv #this tv1
+    tv cd $dirname  // take treeview also to that dir..
+
+XTREEVIEW 0 0 180 472 "#disks" tvdir
+    attr ID tv1
+    attr frame sunk
+    attr resize 0002
+    attr style drag/drop
+    lvuse #this lv1
+    lvchange $tvdir // Take LV to the same dir
+    gosub #this ChangeDir // update window title
+
+XSPLITER 180 0 6 680 tv1 lv1
+
+xRoutine ChangeDir
+    if $$lv.dir = ""  // empty means "disks" list
+        setwintitle #this "Your Computer"
+    else
+        setwintitle #this $$lv.dir
+    endif
