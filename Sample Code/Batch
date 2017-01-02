@@ -1,0 +1,87 @@
+REM Input Validation
+REM 0x141
+REM Http://github.com/ei
+
+@echo off
+title Entry Validation
+color B
+mode con LINES=10 COLS=48
+
+:LoginAttempt
+echo -----------------------------------------------
+echo Project: MadFrog - Version 1.0.0
+echo -----------------------------------------------
+echo.
+echo CPanel Login:
+echo Enter a correct password to access the CPanel.
+echo.
+set/p password1=-^> 
+if "%password1%" EQU "Hipster" goto :LoginNotification
+if not "%password1%" EQU "Hipster" goto :IncorrectPassword
+
+:IncorrectPassword
+cls
+mode con LINES=10 COLS=48
+color C
+echo -----------------------------------------------
+echo Project: MadFrog - Version 1.0.0
+echo -----------------------------------------------
+echo.
+echo CPanel Login:
+echo Incorrect password. Please try again.
+echo.
+echo Press any key to return...
+pause >nul
+cls
+color B
+goto :LoginAttempt
+
+:LoginNotification
+cls
+mode con LINES=10 COLS=48
+color A
+echo -----------------------------------------------
+echo Project: MadFrog - Version 1.0.0
+echo -----------------------------------------------
+echo.
+echo CPanel Login:
+echo You have successfully logged in!
+echo.
+echo Press any key to continue to the CPanel...
+pause >nul
+cls
+
+:CPanel
+cls
+mode con LINES=10 COLS=48
+color B
+echo -----------------------------------------------
+echo Project: MadFrog - Version 1.0.0
+echo -----------------------------------------------
+echo.
+echo Select a number, then press ENTER.
+echo.
+echo 1) Exit
+echo.
+
+set/p input1=-^> 
+if "%input1%" EQU "1" goto :exit
+if not "%input1%" EQU "1" goto :Incorrect#choice
+
+:Incorrect#choice
+cls
+mode con LINES=10 COLS=48
+color C
+echo -----------------------------------------------
+echo Project: MadFrog - Version 1.0.0
+echo -----------------------------------------------
+echo.
+echo You have entered an invalid value.
+echo.
+echo Press any key to return...
+pause >nul
+cls
+color B
+goto :CPanel
+
+:exit
