@@ -1,0 +1,46 @@
+# Concordance Program Using Strings
+# http://www2.cs.arizona.edu/icon/progvis/lectures/memmon.htm
+
+global uses, lineno, width
+
+procedure main(args)
+   width := 15                # width of word field
+   uses := table()
+   lineno := 0
+   every tabulate(words())    # tabulate all citations
+   output()                   # print the citations
+end
+
+#  Add line number to citations for word
+#
+procedure tabulate(word)
+   /uses[word] := set()
+   insert(uses[word], lineno)
+   return
+end
+
+#  Generate words
+#
+procedure words()
+   while line := read() do {
+      lineno +:= 1
+      write(right(lineno, 6), "  ", line)
+      map(line) ? while tab(upto(&letters)) do {
+         s := tab(many(&letters))
+         if *s >= 3 then suspend s# skip short words
+         }
+      }
+end
+
+#  Print the results
+#
+procedure output()
+   write()                    # blank line
+   uses := sort(uses, 3)      # sort citations
+   while word := get(uses) do {
+      line := ""
+      numbers := sort(get(uses))
+      while line ||:= get(numbers) || ", "
+      write(left(word, width), line[1:-2])
+      }
+end
