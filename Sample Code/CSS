@@ -1,0 +1,27 @@
+@import url(style.css);
+
+input[type=radio] + label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 8px;
+    background-color: #aaa;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);
+    border-radius: 8px;
+}
+
+/* Apply this style only for printing */
+@media print {
+    body {
+        color: #000;
+        background: #fff;
+    }
+}
+
+/* Embed a custom web font */
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: local('DejaVu Sans Regular'), url(/fonts/DejaVuSans.ttf);
+}
