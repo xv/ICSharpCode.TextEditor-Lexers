@@ -35,7 +35,7 @@ https://github.com/ei
         <Property name="BlockCommentEnd" value="*)"/>
     </Properties>
     
-    <Digits name="Digits" bold="false" italic="false" color="#A0911F"/>
+    <Digits name="Digits" bold="false" italic="false" color="Black"/>
 
     <RuleSets>
         <RuleSet ignorecase="false">
