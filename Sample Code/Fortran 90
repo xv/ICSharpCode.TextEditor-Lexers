@@ -1,0 +1,116 @@
+! Modules for dynamic array allocation
+! https://web.stanford.edu/class/me200c/tutorial_90/09_modules.html
+
+MODULE Dyn_Array
+!---------------------------------------------------------------------
+!
+!  Module containing definitions needed to dynamically allocate 
+!  the values of an array 
+!
+!---------------------------------------------------------------------
+   INTEGER :: n
+   REAL, DIMENSION(:), ALLOCATABLE :: A
+END MODULE Dyn_Array
+
+PROGRAM Play_with_Array
+!---------------------------------------------------------------------
+!
+!  This program calls a subroutine to read in the values of
+!  a dynamically allocated array A and calls several 1D intrinsic
+!  array functions
+!
+!  Uses:  MODULE Dyn_Array
+!         SUBROUTINE Get_Data
+!         SUBROUTINE Dealloc_Array
+!
+!---------------------------------------------------------------------
+USE Dyn_Array
+IMPLICIT NONE
+
+INTERFACE 
+   SUBROUTINE Get_Data
+   END SUBROUTINE Get_Data
+END INTERFACE
+
+INTERFACE 
+   SUBROUTINE Dealloc_Array
+   END SUBROUTINE Dealloc_Array
+END INTERFACE
+
+! Declare local variables
+REAL :: Prod_A, Sum_A
+
+! Call subroutine to read in data for array A
+CALL Get_Data
+
+! Use intrinsic functions to generate data
+Prod_A = PRODUCT(A)
+
+! Write out product of elements of array A
+write(*,100) "The product of the elements of array A area", &
+              Prod_A
+
+! Use intrinsic function to generate more data
+Sum_A = SUM(A)
+
+! Write out sum of elements of array A
+write(*,100) "The sum of the elements of array A are", &
+             Sum_A 
+
+! Now, deallocate memory containing array A
+CALL Dealloc_Array
+
+! Place for format statement to live
+100 format (A, 2x, F11.2)
+
+END PROGRAM Play_with_Array
+!-----Get_Data--------------------------------------------------------
+!
+!  Subroutine to read in the number of values to fill A array,
+!  allocate space, and to assign the values to A
+!
+!  Uses:  MODULE Dyn_Array
+!
+!---------------------------------------------------------------------
+SUBROUTINE Get_Data
+USE Dyn_Array
+
+IMPLICIT NONE
+
+! Declare local variables
+INTEGER :: AllocateStatus
+
+! Read in number of array elements from user
+write(*,'(A)', ADVANCE = "NO") "Input the number of elements desired:  "
+read(*,*) n
+
+! Allocate storage for array A accordingly
+ALLOCATE( A(n), STAT = AllocateStatus)
+IF (AllocateStatus /= 0) STOP "*** Not enough memory ***"
+
+! Read in values for A
+write(*, '(A)', ADVANCE = "NO") "Input array values:  "
+read(*,*) A
+
+END SUBROUTINE Get_Data
+
+!-----Dealloc_Array---------------------------------------------------
+!
+!  Subroutine to deallocate array space
+!
+!  Uses:  MODULE Dyn_Array
+!
+!---------------------------------------------------------------------
+SUBROUTINE Dealloc_Array
+USE Dyn_Array
+
+IMPLICIT NONE
+
+! Declare local variables
+INTEGER :: DeAllocateStatus
+
+! Deallocate storage for array A 
+DEALLOCATE( A, STAT = DeAllocateStatus)
+IF (DeAllocateStatus /= 0) STOP "*** Trouble deallocating ***"
+
+END SUBROUTINE Dealloc_Array
