@@ -1,0 +1,106 @@
+-- TextProcessing
+-- http://lua-users.org/wiki/TextProcessing
+
+-- Write a line adding \n to the end
+--   [fp]: file handle
+--   s: string to write
+function writeLine(fp, s)
+  if not s then s, fp = fp, nil end
+  if fp then write(fp, s .. "\n")
+  else write(s .. "\n")
+  end
+end
+
+-- Remove any final \n from a string.
+--   s: string to process
+-- returns
+--   s: processed string
+function chomp(s)
+  return gsub(s, "\n$", "")
+end
+
+-- Escape a string to be used as a pattern
+--   s: string to process
+-- returns
+--   s: processed string
+function escapePattern(s)
+  s = gsub(s, "(%W)", "%%%1")
+  return s
+end
+
+-- Escape a string to be used as a shell token (quote spaces and \s)
+--   s: string to process
+-- returns
+--   s: processed string
+function escapeShell(s)
+  s = gsub(s, "([ %(%)])", "\\%1")
+  return s
+end
+
+-- Turn a list of strings into a sep-separated string
+--   sep: separator
+--   l: list of strings to join
+-- returns
+--   s: joined up string
+function join(sep, l)
+  local len = getn(l)
+  if len == 0 then return "" end
+  local s = l[1]
+  for i = 2, len do s = s .. sep .. l[i] end
+  return s
+end
+
+-- Justify a string
+--   s: string to justify
+--   width: width to justify to (+ve means right-justify; negative
+--     means left-justify)
+--   [padder]: string to pad with (" " if omitted)
+-- returns
+--   s: justified string
+function pad(s, width, padder)
+  padder = strrep(padder or " ", abs(width))
+  if width < 0 then return strsub(padder .. s, width) end
+  return strsub(s .. padder, 1, width)
+end
+
+-- Wrap a string into a paragraph
+--   s: string to wrap
+--   w: width to wrap to [78]
+--   i1: indent of first line [0]
+--   i2: indent of subsequent lines [0]
+-- returns
+--   s: wrapped paragraph
+function wrap(s, w, i1, i2)
+  w = w or 78
+  i1 = i1 or 0
+  i2 = i2 or 0
+  affirm(i1 < w and i2 < w,
+         "wrap: the indents must be less than the line width")
+  s = strrep(" ", i1) .. s
+  local lstart, len = 1, strlen(s)
+  while len - lstart > w do
+    local i = lstart + w
+    while i > lstart and strsub(s, i, i) ~= " " do i = i - 1 end
+    local j = i
+    while j > lstart and strsub(s, j, j) == " " do j = j - 1 end
+    s = strsub(s, 1, j) .. "\n" .. strrep(" ", i2) ..
+      strsub(s, i + 1, -1)
+    local change = i2 + 1 - (i - j)
+    lstart = j + change
+    len = len + change
+  end
+  return s
+end
+
+-- readLines: read _INPUT into a list of lines
+-- returns
+--   line: list of lines
+function readLines()
+  local line = {}
+  repeat
+    local l = read("*l")
+    if not l then break end
+    tinsert(line, l)
+  until nil
+  return line
+end
