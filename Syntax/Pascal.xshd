@@ -45,9 +45,14 @@ https://github.com/ei
                 <Begin>//</Begin>
             </Span>
 
-            <Span name="BlockComment" stopateol="false" color="Green" bold="false" italic="false">
+            <Span name="BlockComment1" stopateol="false" color="Green" bold="false" italic="false">
                 <Begin>{</Begin>
                 <End>}</End>
+            </Span>
+            
+            <Span name="BlockComment2" stopateol="false" color="Green" bold="false" italic="false">
+                <Begin>(*</Begin>
+                <End>*)</End>
             </Span>
            
             <Span name="String" stopateol="true" color="Maroon" bold="false" italic="false">
