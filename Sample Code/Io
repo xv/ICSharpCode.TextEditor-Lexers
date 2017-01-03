@@ -5,13 +5,13 @@ WebRequest := Object clone do(
     handleSocket := method(aSocket,
         aSocket streamReadNextChunk
         request := aSocket readBuffer \
-			betweenSeq("GET ", " HTTP")
+            betweenSeq("GET ", " HTTP")
         f := File with(request) 
         if(f exists, 
-			f streamTo(aSocket)
-		, 
-			aSocket streamWrite("not found")
-		)
+            f streamTo(aSocket)
+        , 
+            aSocket streamWrite("not found")
+        )
         aSocket close
     )
 )
