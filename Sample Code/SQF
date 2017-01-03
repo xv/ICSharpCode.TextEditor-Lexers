@@ -1,0 +1,21 @@
+private ["_item", "_player"];
+
+_npc = _this select 0;
+_player = _this select 1;
+_action = _this select 2;
+
+_npc removeAction _action;
+
+_itemHeld = _this select 3 select 0;
+_item = switch (_itemHeld) do {
+	case "watchHolder":   {"ItemWatch"};
+	case "mapHolder":     {"ItemMap"};
+	case "compassHolder": {"ItemCompass"};
+};
+
+if (_player getVariable _itemHeld == _npc) then {
+	hint "Found it!";
+	_player addWeapon _item;
+} else {
+	hint "Sorry, I have nothing for you!";
+};
