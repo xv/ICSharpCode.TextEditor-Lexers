@@ -1,0 +1,26 @@
+/* REXX    SHORTPG     Operates on an Enterprize-PL/I listing to
+                       eliminate the spurious blank line at the
+                       bottom of each page.
+                       
+                       http://www.rexxla.org/freerepo/REXX/shortpg.txt
+*/
+address ISREDIT
+"MACRO (opts)"
+upper opts
+parse var opts "TRACE" tv .
+parse value tv "N" with tv .
+rc = Trace("O"); rc = Trace(tv)
+ 
+"RESET"
+"F p'='   LAST"
+do while rc = 0                        /* while found                */
+   "(text) = LINE .zcsr"               /* acquire text               */
+   if Substr(text,2) = "" then,        /* it's blank                 */
+      "XSTATUS .zcsr = X"              /* hide it                    */
+   "F '1' 1 PREV"
+   "F p'='   PREV"                     /* line before                */
+end                                    /* rc = 0                     */
+rc = Trace("O"); rc = Trace(tv)
+"DEL ALL X"
+ 
+exit                                   /*@ SHORTPG                   */
