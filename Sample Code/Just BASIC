@@ -1,0 +1,114 @@
+' SpriteJump - Using Branch Event Label
+' https://justbasic.wikispaces.com/SpriteJump
+
+' OldKey holds last pressed key
+    OldKey = 0
+ 
+' xDir and yDir hold moving directions
+    xDir = 0: yDir = 0
+ 
+    WindowWidth = 757
+    WindowHeight = 595
+ 
+    UpperLeftX = Int((DisplayWidth - WindowWidth) /2)
+    UpperLeftY = Int((DisplayHeight - WindowHeight) /2)
+ 
+    Menu #demo, "&Options", "E&xit", [Quit]
+    Graphicbox #demo.gb1, 0, 0, 750, 550
+ 
+    Open "Controlling Sprites" for Window as #demo
+    #demo, "Trapclose [Quit]"
+ 
+' Load the background bmp
+    Loadbmp "bg", "SPRITES\BG1.bmp"
+    #demo.gb1, "Down; Background bg; Drawsprites"
+ 
+' Load the sprites
+    Loadbmp "cm1", "SPRITES\cave1.bmp"
+    Loadbmp "cm2", "SPRITES\cave2.bmp"
+    #demo.gb1, "Addsprite cm cm1 cm1 cm2 cm2"
+ 
+' Set the initial cyclesprite command to 0
+    #demo.gb1, "Cyclesprite cm 0"
+ 
+' Set inital x, y variables (cm facing right to start)
+    #demo.gb1, "Spritexy cm 350 450"
+ 
+' Trap keypresses
+    #demo.gb1, "When characterInput [KeyPress]"
+    #demo.gb1, "Setfocus"
+ 
+' Set the timer
+    Timer 50, [SeeSprites]
+    Wait
+ 
+[Quit]
+    Timer 0
+    Unloadbmp "bg"
+    Close #demo
+    End
+ 
+[KeyPress]
+    NewKey = Asc(Right$(Inkey$, 1))
+    #demo.gb1, "Spritexy? cm x y"
+    Select Case NewKey
+        Case 37
+            #demo.gb1, "Spriteorient cm mirror"
+            If OldKey = NewKey Then
+                xDir = 0
+                NewKey = 0
+            Else
+                xDir = 1
+            End If
+        Case 38
+            yDir = 1
+        Case 39
+            #demo.gb1, "Spriteorient cm normal"
+            If OldKey = NewKey Then
+                xDir = 0
+                NewKey = 0
+            Else
+                xDir = 2
+            End If
+    End Select
+    OldKey = NewKey
+    Wait
+ 
+[SeeSprites]
+    #demo.gb1, "Spritexy? cm x y"
+    Select Case yDir
+        Case 1 ' Up
+            y = y - 10
+            If y < 350 Then
+                yDir = 2
+                y = 350
+            End If
+        Case 2 ' Down
+            y = y + 10
+            If y > 450 Then
+                yDir = 0
+                y = 450
+            End If
+    End Select
+    Select Case xDir
+        Case 1 ' Left
+            x = x - 7
+            If x < 5 Then
+                xDir = 0
+                x = 10
+            End If
+        Case 2 ' Right
+            x = x + 7
+            If x > 710 Then
+                xDir = 0
+                x = 700
+            End If
+    End Select
+    If xDir + yDir > 0 Then
+        #demo.gb1, "Cyclesprite cm 1"
+    Else
+        #demo.gb1, "Cyclesprite cm 0"
+    End If
+    #demo.gb1, "Spritexy cm ";x;" ";y
+    #demo.gb1, "Setfocus; Drawsprites"
+    Wait
