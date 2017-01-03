@@ -1,0 +1,34 @@
+// https://forge.open-do.org/plugins/moinmoin/parasail/
+
+import PSL::Short_Names::*, *
+
+func Greetings() is
+    Println("Hello, World!")
+end func Greetings
+
+func Fib(N : Int) {N >= 0} -> Int is
+    // '{N >= 0}' is a precondition to this function
+    // Preconditions are built in the language and checked by the compiler
+    if N <= 1 then
+        return N
+    else
+        // Left and right side of the '+' are computed in Parellel here
+        return Fib(N - 1) + Fib(N - 2)
+    end if Fib
+    
+func Increment_All(var Nums : Vector<Int>) is
+    // This function takes a 'var' parameter.
+    // The modification made here will be seen by caller
+    for each Elem of Nums concurrent loop
+        // The 'concurrent' keyword tells the compiler than
+        // iterations of the loop can happen in any order.
+        // It will choose the most optimal number of picothreads to use
+        Elem += 1
+    end loop
+end func Increment_All
+
+func Sum_Of_Squares(N : Int) -> Int is
+    // Built-in and inherntly parallel map-reduce
+    // Initial value is enclosed with angle brackets
+    return (for I in 1 .. N => <0> + I ** 2)
+end func Sum_Of_Squares
