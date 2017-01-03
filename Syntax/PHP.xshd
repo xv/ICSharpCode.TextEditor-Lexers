@@ -69,7 +69,7 @@ https://github.com/ei
                 <End>'</End>
             </Span>
             
-            <MarkFollowing markmarker="true" color="#82751A" bold="false">$</MarkFollowing>
+            <!-- <MarkFollowing markmarker="true" color="#82751A" bold="false">$</MarkFollowing> -->
             <MarkFollowing color="Black" bold="false" italic="true">class</MarkFollowing>
             <MarkFollowing color="Purple" bold="true">trait</MarkFollowing>
             <MarkFollowing color="Purple" bold="true">interface</MarkFollowing>
