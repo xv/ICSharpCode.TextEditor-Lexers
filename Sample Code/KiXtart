@@ -1,0 +1,75 @@
+robvanderwoude.com
+ 
+; Show text if required
+If $Text <> ""
+	$Text
+EndIf
+ 
+; Show prompt if required
+If $NoPrompt <> 1
+	"? [" + $Choices + "]"
+EndIf
+ 
+:Start
+If $TimeOut = 0
+	; Wait infinitely for key to be pressed
+	Get $Key
+Else
+	; Requires at least KiXtart 4.01
+	$KixMajorVer = SubStr( @Kix, 1, InStr( @Kix, "." ) - 1 )
+	If $KixMajorVer < 4
+		Cls
+		? "PMChoice.kix requires KiXtart version 4.01 or later."
+		? "Your KiXtart version is " + @KIX + "."
+		?
+		Quit 255
+	EndIf
+	; Check if key is pressed
+	If KbHit( )
+		Get $Key
+	Else
+		; Check if key is pressed each second during timeout interval
+		$Counter = 0
+		; Default in case no key will be pressed before end of timeout
+		$Key     = Chr( 13 )
+		Do
+			Sleep 1
+			$Counter = $Counter + 1
+			If KbHit( )
+				; Once pressed, read and then exit loop
+				Get $Key
+				$Counter = $TimeOut
+			EndIf
+		Until $Counter = $TimeOut
+	EndIf
+EndIf
+ 
+; Pressing Esc results in return code 0
+If $Key = Chr( 27 )
+	Exit 0
+EndIf
+ 
+; Pressing Enter results in default (if defined!)
+If $Key = Chr( 13 )
+	$Key = $Default
+EndIf
+ 
+; The return code must be the position of the key in the choices string
+$Return = InStr( "$Choices", "$Key" )
+ 
+; Beep and start again if an invalid key was pressed
+If $Return = 0
+	Beep
+	GoTo Start
+EndIf
+ 
+; If cases sensitivity was defined, check if the cases match
+If $Cs = "1"
+	If Asc( SubStr( "$Choices", $Return, 1 ) ) <> Asc( $Key )
+		Beep
+		GoTo Start
+	EndIf
+EndIf
+ 
+; Exit with the proper return code
+Exit $Return
