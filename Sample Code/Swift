@@ -1,0 +1,19 @@
+// Dynamic Type Expression
+
+class SomeBaseClass {
+   class func printClassName() {
+       print("SomeBaseClass")
+   }
+}
+
+class SomeSubClass: SomeBaseClass {
+   override class func printClassName() {
+       print("SomeSubClass")
+   }
+}
+
+let someInstance: SomeBaseClass = SomeSubClass()
+// someInstance has a static type of SomeBaseClass at compile time, and
+// it has a dynamic type of SomeSubClass at runtime
+type(of: someInstance).printClassName()
+// Prints "SomeSubClass"
