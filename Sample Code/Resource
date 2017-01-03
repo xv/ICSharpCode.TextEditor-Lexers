@@ -1,0 +1,16 @@
+#include "shapes.h"
+
+ShapesCursor  CURSOR  SHAPES.CUR
+ShapesIcon    ICON    SHAPES.ICO
+
+ShapesMenu MENU
+{
+    POPUP "&Shape"
+    {
+        MENUITEM "&Clear", ID_CLEAR
+        MENUITEM "&Rectangle", ID_RECT
+        MENUITEM "&Triangle", ID_TRIANGLE
+        MENUITEM "&Star", ID_STAR
+        MENUITEM "&Ellipse", ID_ELLIPSE
+    }
+}
