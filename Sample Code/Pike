@@ -1,0 +1,67 @@
+#! /usr/local/bin/pike
+// -*- pike -*-
+// Written in 2000 by Robert J. Budzynski <Robert@Budzynski.ddns.org>
+// Current address: <Robert.Budzynski@fuw.edu.pl>
+// do whatever you like with it, but I'll take no blame
+
+#if !constant(readlink)
+#error Sorry, symbolic links not supported here
+#endif
+#pragma strict_types
+
+void reportboguslinks( string prefix )
+{
+  array(string) names;
+  string target;
+  object fstat;
+
+  sort( names = get_dir( "." ) );
+
+  foreach( names, string name )
+    {
+      if ( !(fstat = file_stat( name, 1 )) )
+	{
+	  werror( prefix + name + ": can't stat file\n" );
+	  continue;
+	}
+      switch ( fstat->type )
+	{
+      case "lnk":   // symlink
+	if ( ! file_stat( name )  )
+	  write( prefix + name + " -> " + readlink( name ) + "\n" );
+	break;
+      case "dir":   // dir
+	if ( cd( name ) )
+	  {
+	    reportboguslinks( prefix + name + "/" );
+	    cd( ".." );
+	  }
+	else
+	  {
+	    write( prefix + name + ": can't cd\n" );
+	  }
+	break;
+      default:
+	continue;
+	}
+    }
+}
+
+int
+main( int argc, array(string) argv )
+{
+  string prefix;
+
+  prefix = (argc > 1 ) ? argv[1] : "";
+  if (strlen( prefix ) )
+    {
+      cd( prefix ) || error( "%s\: invalid argument (can't cd)\n", prefix);
+      ( prefix[-1] == '/' ) || ( prefix += "/" );
+      reportboguslinks( prefix );
+    }
+  else
+    {
+      reportboguslinks( "" );
+    }
+  return 0;
+}
