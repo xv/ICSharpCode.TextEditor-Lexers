@@ -1,0 +1,54 @@
+// https://learnxinyminutes.com/docs/kotlin/
+
+//The "class" keyword is used to declare classes.
+class ExampleClass(val x: Int) {
+    fun memberFunction(y: Int) : Int {
+        return x + y
+    }
+
+    infix fun infixMemberFunction(y: Int) : Int {
+        return x * y
+    }
+}
+
+/*
+Strings can contain template expressions.
+A template expression starts with a dollar sign ($).
+*/
+val fooTemplateString = "$fooString has ${fooString.length} characters"
+println(fooTemplateString)
+
+// "when" can be used with an argument.
+when (i) {
+    0, 21 -> println("0 or 21")
+    in 1..20 -> println("in the range 1 to 20")
+    else -> println("none of the above")
+}
+
+// "when" can be used as a function that returns a value.
+var result = when (i) {
+    0, 21 -> "0 or 21"
+    in 1..20 -> "in the range 1 to 20"
+    else -> "none of the above"
+}
+println(result)
+
+/*
+We can check if an object is a particular type by using the "is" operator.
+If an object passes a type check then it can be used as that type without
+explicitly casting it.
+*/
+fun smartCastExample(x: Any) : Boolean {
+    if (x is Boolean) {
+        // x is automatically cast to Boolean
+        return x
+    } else if (x is Int) {
+        // x is automatically cast to Int
+        return x > 0
+    } else if (x is String) {
+        // x is automatically cast to String
+        return x.isNotEmpty()
+    } else {
+        return false
+    }
+}
