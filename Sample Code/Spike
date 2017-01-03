@@ -1,0 +1,78 @@
+// A simple class
+// http://spike.sourceforge.net/
+
+#!/usr/bin/env spike-1
+
+class Point {
+    var x, y;
+    
+    // initializing
+    init(newX, newY) {
+        x = newX;
+        y = newY;
+    }
+    
+    // accessing
+    x { return x; }
+    y { return y; }
+    x = newX { x = newX; }
+    y = newY { y = newY; }
+    
+    self x: newX y: newY {
+        x = newX;
+        y = newY;
+        return self;
+    }
+        
+    // arithmetic
+    self + delta {
+        return self.class
+            x: x + delta.x
+            y: y + delta.y;
+    }
+    self * scale {
+        return self.class
+            x: scale * x
+            y: scale * y;
+    }
+    -self {
+        return self.class
+            x: -x
+            y: -y;
+    }
+    self + 1 {
+        return self.class
+            x: x + 1
+            y: y + 1;
+    }
+    self - 1 {
+        return self.class
+            x: x - 1
+            y: y - 1;
+    }
+
+    // printing
+    print() {
+        stdout.printf("(%d, %d)\n", x, y);
+    }
+    
+} meta {
+    
+    self x: xValue y: yValue {
+        return self.new() x: xValue y: yValue;
+    }
+}
+
+
+main(argv) {
+    var a, b, c;
+    
+    a = (Point) x: 4  y: 2;
+    b = (Point) x: 22 y: 44;
+    
+    stdout.printf("a is "); a.print();
+    stdout.printf("b is "); b.print();
+    c = a + b;
+    stdout.printf("c is "); c.print();
+    return 0;
+}
