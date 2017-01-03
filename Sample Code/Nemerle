@@ -1,0 +1,56 @@
+// Longest Common Subsequence
+// https://github.com/rsdn/nemerle/blob/master/snippets/lcs.n
+
+using Nemerle.IO;
+using System;
+using System.Math;
+
+class LCS
+{
+  private _M : array [2, int];
+  private _l : array [char];
+  private _r : array [char];
+
+  private static Max (x : int, y : int, z : int) : int
+  {
+    Max (Max (x, y), z)
+  }
+  
+  private Step (i : int, j : int) : int 
+  {
+    if (i == 0 || j == 0) 
+    {
+      _M [i, j] = 0;
+      0
+    }
+    else {
+      def value =
+        if (_l [i - 1] != _r [j - 1]) 
+          Max (Step (i, j - 1), Step (i - 1, j))
+        else
+          Max (Step (i - 1, j - 1) + 1, Step (i - 1, j), Step (i, j - 1));
+        
+      _M [i, j] = value;
+      value
+    }
+  }
+  
+  public this (l : string, r : string) 
+  {
+    printf ("Calculating LCS of %s and %s...\n", l, r);
+    
+    _M = array (l.Length + 1, r.Length + 1);
+    _l = l.ToCharArray ();
+    _r = r.ToCharArray ();
+    
+    printf ("%d\n", this.Step (l.Length, r.Length));
+  }
+  
+  
+  public static Main () : void 
+  {
+    _ = LCS ("alamakotazz", "komarezzk");
+    _ = LCS ("axbyczd", "exfygzh");
+    _ = LCS ("This is not", "This is not");
+  }
+}
