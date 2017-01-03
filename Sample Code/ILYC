@@ -13,99 +13,99 @@
 #  the program's command-line arguments,
 #  not including the EXE file path.
 procedure main(int argc, string[] argv) do
-	puts("The number of command-line arguments are: " + argc)
-	
-	# Let's create some variables to use
-	int n = 10
-	string[] a = new string[] { "Langston", "Caine", "Taylor" }
-	
-	# First, the if-then-else
-	if n >= 10 then
-		puts("Variable n is greater or equal to 10.")
-	
-	if a[0] = "Langston" then
-		puts("The first one is Dr. Raymond Langston.")
-	else
-		puts("The first one is somebody.")
-	
-	# They can be nested to an abitrary level
-	if n = 1 then
-		puts("n = 1")
-	else if n = 2 then
-		puts("n = 2")
-	else if n = 3 then
-		puts("n = 3")
-	else
-		puts("n is not 1, 2 or 3.")
-	
-	# Now, the switch-case
-	switch n
-		case 1:
-			puts("n = 1")
-		case 2, 3:
-			puts("n is 2 or 3.")
-		default:
-			puts("n is not 1, 2 or 3.")
-	done
-	
-	# In some languages, you can not use non-numeric
-	#  values for switch-case.
-	# But ILYC allows that.
-	print("What is your name? ")
-	switch reads()
-		case "Ray", "Raymond":
-			puts("Hello, Dr. Langston.")
-		case "Horatio", "H.":
-			puts("Good morning, Lt. Caine.")
-		case "Mac":
-			puts("Hi, Detector Taylor.")
-		default:
-			puts("Salut!")
-	done
-	
-	# Below is the for-loop.
-	# i is an automatic variable, which is declared
-	#  and deleted by the for loop.
-	# You can declare your own variable prior to the loop,
-	#  but you have to delete it yourself.
-	# It should be of int type, and is not an array.
-	for i from 0 to a.Length - 1 loop
-		puts(a[i])
-	
-	# You also have the while-loop
-	while n > 0 loop do
-		puts(n * 10)
-		n = n - 1 #you should do this, otherwise it will loop forever!
-	done
-	
-	# And the until-loop
-	until n = 10 loop do
-		puts(n * n)
-		n = n + 1
-	done
-	
-	# You can break a loop by the break statement
-	for i from 0 to n loop do
-		puts(i - 20)
-		if i > 5 then do
-			puts("\ti is greater than 5, and we stop here.")
-			break
-		done
-	done
-	
-	# If you think some code may lead to error,
-	#  you can put it in the try-catch
-	try do
-		puts("We are going to do some silly thing.")
-		puts("Such as dividing a number by 0.")
-		puts(10 / 0)
-	done
-	catch (e) do
-		puts("As you can see, an error has been thrown.")
-		puts("You can catch it here.")
-		puts("It is represented by the automatic variable e.")
-		puts("\tDO NOT declare that variable yourself!")
-		puts("The error message is: " + e.Message)
-		puts("And the error code is: " + e.Code)
-	done
+    puts("The number of command-line arguments are: " + argc)
+    
+    # Let's create some variables to use
+    int n = 10
+    string[] a = new string[] { "Langston", "Caine", "Taylor" }
+    
+    # First, the if-then-else
+    if n >= 10 then
+        puts("Variable n is greater or equal to 10.")
+    
+    if a[0] = "Langston" then
+        puts("The first one is Dr. Raymond Langston.")
+    else
+        puts("The first one is somebody.")
+    
+    # They can be nested to an abitrary level
+    if n = 1 then
+        puts("n = 1")
+    else if n = 2 then
+        puts("n = 2")
+    else if n = 3 then
+        puts("n = 3")
+    else
+        puts("n is not 1, 2 or 3.")
+    
+    # Now, the switch-case
+    switch n
+        case 1:
+            puts("n = 1")
+        case 2, 3:
+            puts("n is 2 or 3.")
+        default:
+            puts("n is not 1, 2 or 3.")
+    done
+    
+    # In some languages, you can not use non-numeric
+    #  values for switch-case.
+    # But ILYC allows that.
+    print("What is your name? ")
+    switch reads()
+        case "Ray", "Raymond":
+            puts("Hello, Dr. Langston.")
+        case "Horatio", "H.":
+            puts("Good morning, Lt. Caine.")
+        case "Mac":
+            puts("Hi, Detector Taylor.")
+        default:
+            puts("Salut!")
+    done
+    
+    # Below is the for-loop.
+    # i is an automatic variable, which is declared
+    #  and deleted by the for loop.
+    # You can declare your own variable prior to the loop,
+    #  but you have to delete it yourself.
+    # It should be of int type, and is not an array.
+    for i from 0 to a.Length - 1 loop
+        puts(a[i])
+    
+    # You also have the while-loop
+    while n > 0 loop do
+        puts(n * 10)
+        n = n - 1 #you should do this, otherwise it will loop forever!
+    done
+    
+    # And the until-loop
+    until n = 10 loop do
+        puts(n * n)
+        n = n + 1
+    done
+    
+    # You can break a loop by the break statement
+    for i from 0 to n loop do
+        puts(i - 20)
+        if i > 5 then do
+            puts("\ti is greater than 5, and we stop here.")
+            break
+        done
+    done
+    
+    # If you think some code may lead to error,
+    #  you can put it in the try-catch
+    try do
+        puts("We are going to do some silly thing.")
+        puts("Such as dividing a number by 0.")
+        puts(10 / 0)
+    done
+    catch (e) do
+        puts("As you can see, an error has been thrown.")
+        puts("You can catch it here.")
+        puts("It is represented by the automatic variable e.")
+        puts("\tDO NOT declare that variable yourself!")
+        puts("The error message is: " + e.Message)
+        puts("And the error code is: " + e.Code)
+    done
 done
