@@ -1,0 +1,54 @@
+; Binary Tree sort
+; http://cs.gmu.edu/~white/CS363/Scheme/SchemeSamples.html
+
+; We are going to represent each node in a binary tree as:
+;  (value (left child)(right child))  If the node has no left 
+;  and/or right child, this is represented with ().  So,
+;  (2 (1()())(3()()))  is the tree:   2
+;                                   /   \
+;                                  1     3
+
+
+(define (binarysort L)
+  (if (null? L) '()
+     (traverse (btree L))
+))
+
+(define (btree L)
+  (if (= (length L) 1) (leaf (car L))
+        (binsert (btree (cdr L)) (car L))
+  )
+)
+
+
+(define (binsert T A)     ; insert A into the tree
+   (cond  ( (null? T) (leaf A) )        ; insert here
+          ( (> (car T) A) (list (car T) 
+                                (binsert (car (cdr T)) A)
+                                (car (cdr (cdr T))))
+           )  ; left subtree 
+          ( else (list (car T)
+                       (car (cdr T)) 
+                       (binsert (car (cdr (cdr T))) A))     ; right subtree
+          )
+    )
+)
+
+(define (leaf A)          ; add a leaf to the tree (A ()())
+   (list A '() '())
+)
+
+(define (traverse L)   ; output sorted list by traversing the tree 
+  (cond ( (null? L) L)
+        ( else
+           (append (traverse (car (cdr L)))
+                   (cons (car L)(traverse (car (cdr (cdr L))))))
+        )
+  )
+)
+
+(define (length L)
+  (if (null? L) 0
+     (+ 1 (length (cdr L)))
+  )
+)
