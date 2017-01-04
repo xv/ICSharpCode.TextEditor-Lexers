@@ -1,0 +1,42 @@
+-- Using Protected Types
+-- https://www.aldec.com/en/support/resources/documentation/articles/1179/print_page
+
+shared variable my_flag : flag_type;
+
+-- architecture statement part:
+prc1: process
+
+begin
+   report "PRC1: Process started...";
+   
+   while my_flag.inactive loop   -- reference point 1 (iteration 21)
+      wait for 1 ns;             -- (simulation time 20 ns)
+   end loop;
+   
+   report "PRC1: Flag activation detected!";
+   
+   while my_flag.active loop
+      wait for 1 ns;
+   end loop;
+   
+   report "PRC1: Flag deactivation detected! Suspending...";
+   wait;
+end process;
+
+
+prc2: process
+
+begin
+   report "PRC2: Process started...";
+   wait for 20 ns;
+   report "PRC2: Setting the flag...";   -- reference point 1
+   
+   my_flag.set;                          -- (simulation time 20 ns)
+   wait for 20 ns;
+   wait for 0 ns;      -- additional delta delay!
+   report "PRC2: Resetting the flag...";
+   
+   my_flag.reset;      -- (simulation time 40 ns, delta cycle 1)
+   report "PRC2: Suspending...";
+   wait;
+end process;
