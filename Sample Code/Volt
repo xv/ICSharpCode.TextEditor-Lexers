@@ -1,0 +1,14 @@
+// Getting Input
+// http://www.volt-lang.org/doc/tvpl/c3-steps.html
+
+import watt.io;
+import watt.conv;
+
+fn main() i32
+{
+    writeln("Enter a number.");
+    n := toInt(readln());
+    writeln("Your number doubled is");
+    writeln(n * 2);
+    return 0;
+}
