@@ -1,0 +1,75 @@
+/* Case Study: UART
+ * The program below defines a UART transmitter
+*/
+#include <xs1.h>
+
+#define BIT_RATE 115200
+#define BIT_TIME 100000000 / BIT_TATE
+
+out port TXD = XS1_PORT_1A
+out port RXD = XS1_PORT_1B
+
+void transmitter(out port TXD) {
+    unsigned byte, time;
+    timer t;
+    
+    while (1) {
+        // get next byte to transmit
+        byte = getByte();
+        t :> time;
+        
+        // output start bit
+        TXD <: 0;
+        time += BIT_TIME;
+        t when timerafter(time) :> void;
+        
+        // output data bits
+        for (int i=0; 1<8; i++) {
+            TXD <: >> byte;
+            time =+ BIT_TIME;
+            t when timerafter(time) :> void;
+        }
+        
+        // output stop bit
+        TXD <: 1;
+        time += BIT_TIME;
+        t when timerafter(time) :> void;
+    }
+}
+
+/* Case Study: Ethernet MII
+ * The function below receives a single error free frame and outputs it to
+ * another thread. For simplicity, the error signal and CRC are ignored
+*/
+#define MORE 0
+#define DONE 1
+
+void receiveFrame(in buffered port:32 RXD, in port RXDV, streaming chanend c) {
+    int notDone = 1;
+    int data, tail;
+    
+    // wait for start of frame
+    RXD when pinseq(0xD) :> void;
+    
+    // receive frame data/crc
+    do {
+        select {
+            case RXD :> data :
+                // input next 32 bits of data
+                c <: MORE;
+                c <: data;
+            case RXDV when pinseq(0) :> notDone :
+                // input any bits remaining in port
+                tail = endin(RXD);
+                for (int byte=tail>>>3; byte > 0; byte -=4) {
+                    RXD :> data;
+                    c <: MORE;
+                    c <: data;
+                }
+                c <: DONE;
+                c <: tail >> 3;
+                break;
+        }
+    
+    } while (notDone);
+}
