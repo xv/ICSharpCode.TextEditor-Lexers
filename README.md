@@ -72,14 +72,14 @@ Dim synDir As String = Application.StartupPath & "\Syntax"
 Dim fsmProvider As FileSyntaxModeProvider
 
 If Directory.Exists(synDir) Then
-	' create new provider with the highlighting directory
-	fsmProvider = New FileSyntaxModeProvider(synDir)
-	' attach to the text editor
-	HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmProvider)
-	' activate the highlighting, use the name from the SyntaxDefinition node in the .xshd file
-	TextEditorControl.SetHighlighting("YourHighlighting")
+    ' create new provider with the highlighting directory
+    fsmProvider = New FileSyntaxModeProvider(synDir)
+    ' attach to the text editor
+    HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmProvider)
+    ' activate the highlighting, use the name from the SyntaxDefinition node in the .xshd file
+    TextEditorControl.SetHighlighting("YourHighlighting")
 Else
-	MessageBox.Show(ChrW(39) + synDir + ChrW(39) + "doesn't exist")
+    MessageBox.Show(ChrW(39) + synDir + ChrW(39) + "doesn't exist")
 End If
 ```
 
