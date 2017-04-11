@@ -21,11 +21,11 @@ Ada          | Boo   | C            | Dart   | Erlang | Falcon     | Groovy  | H
 ANTLR        |       | C++          | Delphi |        | Fantom     | Gui4Cli | HTML    | INI/INF | JSON       |         | Lua  |         |       | PHP        | Resource | Solidity | TypeScript | VBScript    | XML
 Assembly     |       | Ceylon       |        |        | Fortran95  |         |         | Io      | Julia      |         |      |         |       | Pike       | Rexx     | Spike    |            | Verilog     | Xtend
 AutoHotkey   |       | ChucK        |        |        |            |         |         |         |            |         |      |         |       | PowerShell | Rust     | SQF      |            | VHDL        |
-             |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | Prolog     |          | SQL      |            | VS Solution |
-             |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       | PureScript |          | Swift    |            | Volt        |
-             |       | CoffeeScript |        |        |            |         |         |         |            |         |      |         |       | Python     |          |          |            |             |
-             |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
-             |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
+‌‌             |       | Clojure      |        |        |            |         |         |         |            |         |      |         |       | Prolog     |          | SQL      |            | VS Solution |
+‌‌             |       | Cocoa        |        |        |            |         |         |         |            |         |      |         |       | PureScript |          | Swift    |            | Volt        |
+‌‌             |       | CoffeeScript |        |        |            |         |         |         |            |         |      |         |       | Python     |          |          |            |             |
+‌‌             |       | Cool         |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
+‌‌             |       | CSS          |        |        |            |         |         |         |            |         |      |         |       |            |          |          |            |             |
  
 That makes 85 languages in total.
 
