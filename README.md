@@ -1,14 +1,8 @@
-Synopsis 📜
-===========
+Synopsis
+========
 This project is a compilation of lexers I had written for [SharpDevelop](https://github.com/icsharpcode)'s TextEditor component. I am indeed late to the party, as the component is no longer supported by SharpDevelop team; however, I spent a good chunk of time writing these lexers through the years and now I thought why not make them open source for everyone who's still using the component.
 
-All lexers were created exclusively for  ICSharpCode.TextEditor <kbd>version 3.2</kbd>. They were not tested on any earlier or later releases.
-
-----------
-
-<p align="center">
-  <img src ="http://i.imgur.com/Pif99Td.png" />
-</p>
+All lexers were created exclusively for ICSharpCode.TextEditor v3.2. They were not tested on any earlier or later releases.
 
 Languages
 ---------
@@ -85,11 +79,11 @@ End If
 
 For more information on XSHD files,  [see here](https://github.com/icsharpcode/SharpDevelop/wiki/Syntax-highlighting#attach-a-syntaxhighlighting-to-the-text-editor).
 
-Contact
+Contact Author
 -------
-Your love letters &nbsp;&nbsp;&nbsp;> hello@exr.be
-<br/>
-Tweet me maybe?   > [0x141](https://twitter.com/0x141)
+[Email me your love letters](mailto:xviyy@aol.ca)
+<br>
+[Tweet me maybe?](https://twitter.com/xviyy)
 
 Legal
 -----
