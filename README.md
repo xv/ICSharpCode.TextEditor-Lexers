@@ -81,7 +81,7 @@ For more information on XSHD files,  [see here](https://github.com/icsharpcode/S
 
 Contact Author
 -------
-[Email me your love letters](mailto:xviyy@aol.ca)
+[Email me your love letters](mailto:xviyy@aol.com)
 <br>
 [Tweet me maybe?](https://twitter.com/xviyy)
 
